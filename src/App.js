@@ -6,12 +6,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-         
           <h1 className="App-title">Welcome to 50 state quarters collector</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>test test test</p>
       </div>
     );
   }

@@ -9,7 +9,7 @@ class App extends Component {
                 <h1>Welcome to the 50 state quarters collector</h1>
               </header>
               <div>
-                <Test />
+                test component: <Test />
               </div>
           </div>
       );

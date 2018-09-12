@@ -32,12 +32,8 @@ export default class ApplicationViews extends Component {
 
   state = {
     users: [],
-    news: [],
-    messages: [],
-    tasks: [],
-    jokes: [],
-    events: [],
-    friends: [],
+    state: [],
+    quarter: [],
     isLoaded: false
   }
 
@@ -64,113 +60,6 @@ export default class ApplicationViews extends Component {
       user: user
     }))
 
-  addNews = news => DataManager.add("news", news)
-    .then(() => DataManager.getAll("news"))
-    .then(news => this.setState({
-      news: news
-    }))
-
-  deleteNews = id => DataManager.delete("news", id)
-    .then(() => DataManager.getAll("news"))
-    .then(news => this.setState({
-      news: news
-    }))
-
-  editNews = (id, news) => DataManager.edit("news", id, news)
-    .then(() => DataManager.getAll("news"))
-    .then(news => this.setState({
-      news: news
-    }))
-
-  addMessage = messages => DataManager.add("messages", messages)
-    .then(() => DataManager.getAll("messages"))
-    .then(messages => this.setState({
-      messages: messages
-    }))
-
-  deleteMessage = id => DataManager.delete("messages", id)
-    .then(() => DataManager.getAll("messages"))
-    .then(messages => this.setState({
-      messages: messages
-    }))
-
-  editMessage = (id, messages) => DataManager.edit("messages", id, messages)
-    .then(() => DataManager.getAll("messages"))
-    .then(messages => this.setState({
-      messages: messages
-    }))
-
-  addTask = task => DataManager.add("tasks", task)
-    .then(() => DataManager.getUnfinishedTasks("tasks"))
-    .then(tasks => this.setState({
-      tasks: tasks
-    }))
-
-  deleteTask = id => DataManager.delete("tasks", id)
-    .then(() => DataManager.getUnfinishedTasks("tasks"))
-    .then(tasks => this.setState({
-      tasks: tasks
-    }))
-
-  editTask = (id, tasks) => DataManager.edit("tasks", id, tasks)
-    .then(() => DataManager.getUnfinishedTasks("tasks"))
-    .then(tasks => this.setState({
-      tasks: tasks
-    }))
-
-  addJoke = joke => DataManager.add("jokes", joke)
-    .then(() => DataManager.getAll("jokes"))
-    .then(jokes => this.setState({
-      jokes: jokes
-    }))
-
-  deleteJoke = id => DataManager.delete("jokes", id)
-    .then(() => DataManager.getAll("jokes"))
-    .then(jokes => this.setState({
-      jokes: jokes
-    }))
-
-  editJoke = (id, jokes) => DataManager.edit("jokes", id, jokes)
-    .then(() => DataManager.getAll("jokes"))
-    .then(jokes => this.setState({
-      jokes: jokes
-    }))
-
-  addEvent = event => DataManager.add("events", event)
-    .then(() => DataManager.getAllAscend("events"))
-    .then(events => this.setState({
-      events: events
-    }))
-
-  deleteEvent = id => DataManager.delete("events", id)
-    .then(() => DataManager.getAllAscend("events"))
-    .then(events => this.setState({
-      events: events
-    }))
-
-  editEvent = (id, events) => DataManager.edit("events", id, events)
-    .then(() => DataManager.getAllAscend("events"))
-    .then(events => this.setState({
-      events: events
-    }))
-
-  addFriend = friend => DataManager.add("friends", friend)
-    .then(() => DataManager.getAll("friends"))
-    .then(friends => this.setState({
-      friends: friends
-    }))
-
-  deleteFriend = id => DataManager.delete("friends", id)
-    .then(() => DataManager.getAll("friends"))
-    .then(friends => this.setState({
-      friends: friends
-    }))
-
-  editFriend = (id, friends) => DataManager.edit("friends", id, friends)
-    .then(() => DataManager.getAll("friends"))
-    .then(friends => this.setState({
-      friends: friends
-    }))
 
   componentDidMount() {
 
@@ -179,47 +68,9 @@ export default class ApplicationViews extends Component {
     DataManager.getAll("users")
       .then(allUsers => {
         newState.users = allUsers
-      })
-      .then(() => {
-        DataManager.getAll("news")
-          .then(allNews => {
-            newState.news = allNews
-          })
-          .then(() => {
-            DataManager.getAll("messages")
-              .then(allMessages => {
-                newState.messages = allMessages
-              })
-              .then(() => {
-                DataManager.getUnfinishedTasks("tasks")
-                  .then(allTasks => {
-                    newState.tasks = allTasks
-                  })
-                  .then(() => {
-                    DataManager.getAll("jokes")
-                      .then(allJokes => {
-                        newState.jokes = allJokes
-                      })
-                      .then(() => {
-                        DataManager.getUnfinishedTasks("events")
-                          .then(allEvents => {
-                            newState.events = allEvents
-                          })
-                          .then(() => {
-                            DataManager.getAll("friends")
-                              .then(allFriends => {
-                                newState.friends = allFriends
-                              })
-                              .then(() => {
-                                this.setState(newState)
-                              })
-                          })
-                      })
-                  })
-              })
-          })
-      })
-  }
+      })  .then(() => {this.setState(newState)})
+   }
+                     
 
   render() {
     return (

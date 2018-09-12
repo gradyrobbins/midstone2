@@ -21,13 +21,13 @@ export default Object.create(null, {
 
     },
     
-    getUnfinishedTasks: {
-        value: (resource) => {
-            return fetch(`${remoteURL}/${resource}?isChecked=false&_sort=date&_order=asc`)
-            .then(result => result.json())
-        }
+    // getUnfinishedTasks: {
+    //     value: (resource) => {
+    //         return fetch(`${remoteURL}/${resource}?isChecked=false&_sort=date&_order=asc`)
+    //         .then(result => result.json())
+    //     }
 
-    },
+    // },
 
     getAll: {
         value: (resource) => {

@@ -12,27 +12,24 @@ class NavBar extends Component {
             <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/news">News</Link>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                        to="/messages">Messages</Link>
+                        to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/tasks">Tasks</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link"
-                        to="/jokes">Jokes</Link>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                        to="/events">Events</Link>
+                        to="/">Home</Link>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <Link className="nav-link"
-                        to="/friends">Friends</Link>
-                    </li> */}
+                        to="/">Home</Link>
+                    </li>
+                    
                 </ul>
                 <button onClick={() => {
                     localStorage.clear("credentials")

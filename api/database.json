@@ -11,35 +11,47 @@
       "email": "",
       "password": "",
       "id": 2
+    },
+    {
+      "username": "grady",
+      "email": "grady@22.com",
+      "password": "22",
+      "id": 3
+    },
+    {
+      "username": "grady",
+      "email": "grady@22.com",
+      "password": "22",
+      "id": 4
     }
   ],
-    "state": [
-      {
-        "state_id": 1,
-        "name": "Delaware",
-        "statehood": "December 7, 1787",
-        "capital": "Dover",
-        "nicknames": "First State, Diamond State",
-        "motto": "Liberty and Independence",
-        "flower": "Peach Blossom",
-        "bird": "Blue hen chicken"
-      },
-      {
-        "state_id": 2,
-        "name": "Pennsylvania",
-        "statehood": "December 12, 1787",
-        "capital": "Harrisburg",
-        "nicknames": "Keystone State",
-        "motto": "Virtue, Liberty and Independence",
-        "flower": "Mountain Laurel",
-        "bird": "Ruffed Goose"
-      }
-    ],
-    "quarter": [
-      {
-        "quarter_id":"",
-        "user_id":"",
-        "state_id: ":""
-      }
-    ]
-  }
+  "state": [
+    {
+      "state_id": 1,
+      "name": "Delaware",
+      "statehood": "December 7, 1787",
+      "capital": "Dover",
+      "nicknames": "First State, Diamond State",
+      "motto": "Liberty and Independence",
+      "flower": "Peach Blossom",
+      "bird": "Blue hen chicken"
+    },
+    {
+      "state_id": 2,
+      "name": "Pennsylvania",
+      "statehood": "December 12, 1787",
+      "capital": "Harrisburg",
+      "nicknames": "Keystone State",
+      "motto": "Virtue, Liberty and Independence",
+      "flower": "Mountain Laurel",
+      "bird": "Ruffed Goose"
+    }
+  ],
+  "quarter": [
+    {
+      "quarter_id": "",
+      "user_id": "",
+      "state_id: ": ""
+    }
+  ]
+}

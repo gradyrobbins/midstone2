@@ -72,7 +72,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Maryland <br/>
+                 Maryland <br/>
                 Statehood: "April 28, 1788",
                 Capital: "Annapolis",
                 Nicknames: "Old Line State, Free State",
@@ -83,7 +83,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const South_Carolina <br/>
+                 South_Carolina <br/>
                 Statehood: "May 23, 1788",
                 Capital: "Columbia",
                 Nicknames: "Palmetto State",
@@ -94,7 +94,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const New_Hampshire <br/>
+                 New_Hampshire <br/>
                 Statehood: "June 21, 1788",
                 Capital: "Concord",
                 Nicknames: "Granite State",
@@ -105,7 +105,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Virginia <br/>
+                 Virginia <br/>
                 Statehood: "June 25, 1788",
                 Capital: "Richmond",
                 Nicknames: "Sic Semper Tyrannis (Thus always to tyrants)",
@@ -116,7 +116,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const New_York <br/>
+                 New_York <br/>
                 Statehood: "July 26,1788",
                 Capital: "Albany",
                 Nicknames: "Empire State",
@@ -127,7 +127,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const North_Carolina <br/>
+                 North_Carolina <br/>
                 Statehood: "November 21, 1789",
                 Capital: "Raleigh",
                 Nicknames: "Tarheel State, Old North State",
@@ -138,7 +138,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Rhode_Island <br/>
+                 Rhode_Island <br/>
                 Statehood: "May 29, 1790",
                 Capital: "Providence",
                 Nicknames: "Little Rhody, Ocean State",
@@ -149,7 +149,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Vermont <br/>
+                 Vermont <br/>
                 Statehood: "March 4, 1791",
                 Capital: "Montpelier",
                 Nicknames: "Green Mountain State",
@@ -160,7 +160,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Kentucky <br/>
+                 Kentucky <br/>
                 Statehood: "June 1, 1792",
                 Capital: "Frankfort",
                 Nicknames: "Bluegrass State",
@@ -171,7 +171,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Tennessee <br/>
+                 Tennessee <br/>
                 Statehood: "June 1, 1796",
                 Capital: "Nashville",
                 Nicknames: "Volunteer State",
@@ -182,7 +182,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Ohio <br/>
+                 Ohio <br/>
                 Statehood: "March 1, 1803",
                 Capital: "Columbus",
                 Nicknames: "Buckeye State",
@@ -193,7 +193,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Louisiana <br/>
+                 Louisiana <br/>
                 Statehood: "April 30, 1812",
                 Capital: "Baton Rouge",
                 Nicknames: "Pelican State",
@@ -204,7 +204,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Indiana <br/>
+                 Indiana <br/>
                 Statehood: "December 11, 1816",
                 Capital: "Indianapolis",
                 Nicknames: "Hoosier State",
@@ -215,7 +215,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Mississippi <br/>
+                 Mississippi <br/>
                 Statehood: "December 10, 1817",
                 Capital: "Jackson",
                 Nicknames: "Magnolia State",
@@ -226,7 +226,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Illinois <br/>
+                 Illinois <br/>
                 Statehood: "December 3, 1818",
                 Capital: "Springfield ",
                 Nicknames: "Prarie State, Land of Lincoln",
@@ -237,7 +237,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Alabama <br/>
+                 Alabama <br/>
                 Statehood: "December 14, 1819",
                 Capital: "Montgomery",
                 Nicknames: "Heart of Dixie, Camellia State",
@@ -248,7 +248,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Maine <br/>
+                 Maine <br/>
                 Statehood: "March 15, 1820",
                 Capital: "Augusta",
                 Nicknames: "Pine Tree State",
@@ -259,7 +259,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Missouri <br/>
+                 Missouri <br/>
                 Statehood: "August 10, 1821",
                 Capital: "Jefferson City",
                 Nicknames: "Show Me State",
@@ -270,7 +270,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Arkansas <br/>
+                 Arkansas <br/>
                 Statehood: "June 15, 1836",
                 Capital: "Little Rock",
                 Nicknames: "Land of Opportunity, Natural State",
@@ -281,7 +281,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Michigan <br/>
+                 Michigan <br/>
                 Statehood: "January 26, 1837",
                 Capital: "Lansing",
                 Nicknames: "Great Lakes State, Wolverine State",
@@ -292,7 +292,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Florida <br/>
+                 Florida <br/>
                 Statehood: "March 3, 1845",
                 Capital: "Tallahassee",
                 Nicknames: "Sunshine State",
@@ -303,7 +303,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Texas <br/>
+                 Texas <br/>
                 Statehood: "December 29, 1845",
                 Capital: "Austin",
                 Nicknames: "Lone Star State",
@@ -314,7 +314,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Iowa <br/>
+                 Iowa <br/>
                 Statehood: "December 28, 1846",
                 Capital: "Des Moines",
                 Nicknames: "Hawkeye State",
@@ -325,7 +325,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Wisconsin <br/>
+                 Wisconsin <br/>
                 Statehood: "May 29, 1848",
                 Capital: "Madison",
                 Nicknames: "Badger State, America's Dairyland",
@@ -336,7 +336,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const California <br/>
+                 California <br/>
                 Statehood: "September 9, 1850",
                 Capital: "Sacramento",
                 Nicknames: "Golden State",
@@ -347,7 +347,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Minnesota <br/>
+                 Minnesota <br/>
                 Statehood: "May 11, 1858",
                 Capital: "St. Paul",
                 Nicknames: "Land of 10,000 Lakes, North Star State, Gopher State",
@@ -358,7 +358,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Oregon <br/>
+                 Oregon <br/>
                 Statehood: "February 14, 1859",
                 Capital: "Salem",
                 Nicknames: "Beaver State",
@@ -369,7 +369,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Kansas <br/>
+                 Kansas <br/>
                 Statehood: "January 29, 1861",
                 Capital: "Topeka",
                 Nicknames: "Sunflower State",
@@ -380,7 +380,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const West_Virginia <br/>
+                 West_Virginia <br/>
                 Statehood: "June 20, 1863",
                 Capital: "Charleston",
                 Nicknames: "Mountain State",
@@ -391,7 +391,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Nevada <br/>
+                 Nevada <br/>
                 Statehood: "October 31, 1864",
                 Capital: "Carson City",
                 Nicknames: "Silver State",
@@ -402,7 +402,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Nebraska <br/>
+                 Nebraska <br/>
                 Statehood: "March 1, 1867",
                 Capital: "Lincoln",
                 Nicknames: "Cornhusker State",
@@ -413,7 +413,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Colorado <br/>
+                 Colorado <br/>
                 Statehood: "August 1, 1876",
                 Capital: "Denver",
                 Nicknames: "Centennial State",
@@ -424,7 +424,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const North_Dakota <br/>
+                 North_Dakota <br/>
                 Statehood: "November 2, 1889",
                 Capital: "Bismarck",
                 Nicknames: "Peace Garden State, Rough Rider State, Cereal State",
@@ -435,7 +435,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const South_Dakota <br/>
+                 South_Dakota <br/>
                 Statehood: "November 2, 1889",
                 Capital: "Pierre",
                 Nicknames: "Coyote State, Mount Rushmore State",
@@ -446,7 +446,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Montana <br/>
+                 Montana <br/>
                 Statehood: "November 8, 1889",
                 Capital: "Helena",
                 Nicknames: "Treasure State",
@@ -457,7 +457,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Washington <br/>
+                 Washington <br/>
                 Statehood: "November 11, 1889",
                 Capital: "Olympia",
                 Nicknames: "Evergreen State",
@@ -468,7 +468,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Idaho <br/>
+                 Idaho <br/>
                 Statehood: "July 3, 1890",
                 Capital: "Boise",
                 Nicknames: "Gem State",
@@ -479,7 +479,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Wyoming <br/>
+                 Wyoming <br/>
                 Statehood: "July 10, 1890",
                 Capital: "Cheyenne",
                 Nicknames: "Equality State",
@@ -490,7 +490,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Utah <br/>
+                 Utah <br/>
                 Statehood: "January 4, 1896",
                 Capital: "Salt Lake City",
                 Nicknames: "Beehive State",
@@ -501,7 +501,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Oklahoma <br/>
+                 Oklahoma <br/>
                 Statehood: "November 16, 1907",
                 Capital: "Oklahoma City",
                 Nicknames: "Sooner State",
@@ -512,7 +512,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const New_Mexico <br/>
+                 New_Mexico <br/>
                 Statehood: "January 6, 1912",
                 Capital: "Santa Fe",
                 Nicknames: "Land of Enchantment",
@@ -523,7 +523,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Arizona <br/>
+                 Arizona <br/>
                 Statehood: "February 14, 1912",
                 Capital: "Phoenix",
                 Nicknames: "Grand Canyon State",
@@ -534,7 +534,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Alaska <br/>
+                 Alaska <br/>
                 Statehood: "January 3, 1959",
                 Capital: "Juneau",
                 Nicknames: "The Last Frontier (unofficial)",
@@ -545,7 +545,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Hawaii <br/>
+                 Hawaii <br/>
                 Statehood: "August 21, 1959",
                 Capital: "Honolulu",
                 Nicknames: "Aloha State",
@@ -556,7 +556,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const District_of_Columbia <br/>
+                 District_of_Columbia <br/>
                 Statehood: "1 of 6 U.S. territories ",
                 Capital: "Capital of the United States of America",
                 Nicknames: "DC",
@@ -567,7 +567,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Puerto_Rico <br/>
+                 Puerto_Rico <br/>
                 Statehood: "1 of 6 U.S. territories",
                 Capital: "San Juan",
                 Nicknames: "",
@@ -578,7 +578,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Guam <br/>
+                 Guam <br/>
                 Statehood: "1 of 6 U.S. territories",
                 Capital: "Hagatna (Agana)",
                 Nicknames: "",
@@ -589,7 +589,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const American_Samoa <br/>
+                 American_Samoa <br/>
                 Statehood: "1 of 6 U.S. territories",
                 Capital: "Pago Pago",
                 Nicknames: "The last frontier",
@@ -600,7 +600,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const US_Virgin_Islanda <br/>
+                 US_Virgin_Islanda <br/>
                 Statehood: "1 of 6 U.S. territories",
                 Capital: "Charlotte Amalie, St. Thomas",
                 Nicknames: "",
@@ -611,7 +611,7 @@ class Test extends Component {
                 <br/>
                
                 <div>
-                const Northern_Mariana_Islanda <br/>
+                 Northern_Mariana_Islanda <br/>
                 Statehood: "1 of 6 U.S. territories",
                 Capital: "Saipan",
                 Nicknames: "",

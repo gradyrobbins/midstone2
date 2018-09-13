@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/nav/NavBar'
-class Test extends Component {
+class Home extends Component {
   render() {
       return (
             <div>
@@ -17,4 +17,4 @@ class Test extends Component {
 }
 
 
-export default Test;
+export default Home;

@@ -4,7 +4,7 @@ import DataManager from './modules/DataManager'
 import HomePage from './components/homepage/HomePage'
 import Login from './components/login/LoginForm'
 import Register from './components/login/RegisterForm'
-import Test from './test'
+import Home from './test'
 
 export default class ApplicationViews extends Component {
 
@@ -58,7 +58,7 @@ export default class ApplicationViews extends Component {
       <React.Fragment>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/test" component={Test} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/register" render={(props) => {
           return <Register {...props}
             addUser={this.addUser}

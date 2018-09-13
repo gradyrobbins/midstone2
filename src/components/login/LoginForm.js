@@ -35,7 +35,7 @@ export default class Login extends Component {
 
             if (users) {
                 localStorage.setItem("credentials", JSON.stringify(users))
-                document.location.href = 'http://localhost:3000/news'
+                document.location.href = 'http://localhost:3000/test'
             } else {
                 alert("You need to register")
                 document.location.href = 'http://localhost:3000/register'
@@ -44,31 +44,12 @@ export default class Login extends Component {
 
     }
 
-    // handleButtonClick = () => {
-    //     document.location.href = 'http://localhost:3000/news'
-
-    //     this.props.DataManager.getAll("users").then((user) => {
-
-    //         const users = user.find(user => {
-    //             return user.email === this.props.email && user.password === this.props.password //verifies account is in DB
-    //         })
-
-    //         if (users) {
-    //             sessionStorage.setItem("credentials", JSON.stringify(user))
-    //             document.location.href = 'http://localhost:3000/news'
-    //         } else {
-    //             alert("You need to register")
-    //         }
-    //     })
-
-    // }
-
     render() {
         return (
             <div className="forms">
                 <div className="loginForm">
                     <form onSubmit={this.handleLogin}>
-                        <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                        <h1 className="h3 mb-3 font-weight-normal">Please log in</h1>
                         <label htmlFor="inputEmail">
                             Email address
                         </label>
@@ -84,7 +65,7 @@ export default class Login extends Component {
                             placeholder="Password"
                             required="" />
                         <button type="submit" className="btn btn-primary">
-                            Sign in
+                            Login
                         </button>
                     </form>
                 </div>

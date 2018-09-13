@@ -15,20 +15,13 @@ class NavBar extends Component {
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link"
-                        to="/">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/">Home</Link>
+                        <Link className="nav-link" to="/learn">Learn</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                        to="/">Home</Link>
+                        to="/mycoincollection">My Coin Collection</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link"
-                        to="/">Home</Link>
-                    </li>
+                    
                     
                 </ul>
                 <button onClick={() => {

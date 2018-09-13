@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import NavBar from '../nav/NavBar';
 
 class miscData extends Component {
   render() {
       return (
             <div>
                 <div>
-                    <h3>"miscData" component</h3>
+                    <NavBar />
                 </div>
                 
                 <br/>

@@ -5,7 +5,7 @@ class miscData extends Component {
       return (
             <div>
                 <div>
-                    <h3>"Test" component</h3>
+                    <h3>"miscData" component</h3>
                 </div>
                 
                 <br/>

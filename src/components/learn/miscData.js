@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../nav/NavBar';
+import Kennel from './kennel'
 
 class miscData extends Component {
   render() {
@@ -10,8 +11,17 @@ class miscData extends Component {
                 </div>
                 
                 <br/>
+                <div>
+                    Kennel <br/>
+                     
+                     
+                </div>
+                <div>
+                    <Kennel />
+                </div>
+                <br/>
                
-                
+{/*                 
 
 
 
@@ -628,9 +638,9 @@ class miscData extends Component {
                 Flower: "Flores Mayo",
                 Bird: "Mariana fruit-dove"
 
-            </div>
+            </div>*/}
          </div>
-      );
+      ); 
   }
 };
 

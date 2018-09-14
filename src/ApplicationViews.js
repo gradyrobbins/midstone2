@@ -71,5 +71,5 @@ export default class ApplicationViews extends Component {
       </React.Fragment >
     )
 
-  }
+}
 }

@@ -1,31 +1,33 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import NavBar from '../nav/NavBar';
 
-class Card extends Component {
-  render() {
-      return (
+export default class Card  extends Component {
+    render() {
+        
+        console.log("card.js component")
+
+        return (
             <div>
-                <div>
-                    <NavBar />
-                </div>
-                
-                <br/>
-               
-                <div>
-                    <h5>Card component placeholder</h5>
-                    <h5>function maps over database</h5>
-                    <h5>each state from database.json pushed into a card, renders to DOM</h5>
-                    <h5>templating ideas: refer to:  Kennel project</h5>
-                </div>
-                
+                <NavBar />
+                <article className="UserList">
+                        
+                        Map over array of objects then return:
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        User ID:  1 "grady"
 
+                        
+                        State: Mississippi
+                        Bird: lorem
+                        Flower: Ipsum
+                        
+                        
+                </article>
 
-
-         </div>
-      );
-  }
-};
-
-
-export default Card;
-                
+            </div>
+        );
+    }
+}

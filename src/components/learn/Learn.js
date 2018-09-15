@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from '../nav/NavBar';
-import Kennel from './kennel'
+import List from './List'
 
-class miscData extends Component {
+class Learn extends Component {
   render() {
       return (
             <div>
@@ -12,12 +12,12 @@ class miscData extends Component {
                 
                 <br/>
                 <div>
-                    Kennel <br/>
+                    list <br/>
                      
                      
                 </div>
                 <div>
-                    <Kennel />
+                    <List />
                 </div>
                 <br/>
                
@@ -645,5 +645,5 @@ class miscData extends Component {
 };
 
 
-export default miscData;
+export default Learn;
                 

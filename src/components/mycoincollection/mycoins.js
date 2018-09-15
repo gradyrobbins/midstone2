@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import NavBar from '../nav/NavBar';
 
-export default class Card  extends Component {
+export default class Mycoins  extends Component {
     render() {
         
         console.log("card.js component")
@@ -11,10 +11,10 @@ export default class Card  extends Component {
                 <NavBar />
                 <article className="UserList">
                         
-                        Map over array of objects then return:
+                        Map over data then return:
                         <br/>
                         <br/>
-                        <br/>
+                        all cards with 
                         <br/>
                         <br/>
                         User ID:  1 "grady"

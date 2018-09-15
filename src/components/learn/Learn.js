@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from '../nav/NavBar';
+import List from './List'
 
-class miscData extends Component {
+class Learn extends Component {
   render() {
       return (
             <div>
@@ -10,8 +11,17 @@ class miscData extends Component {
                 </div>
                 
                 <br/>
+                <div>
+                    list <br/>
+                     
+                     
+                </div>
+                <div>
+                    <List />
+                </div>
+                <br/>
                
-                
+{/*                 
 
 
 
@@ -628,12 +638,12 @@ class miscData extends Component {
                 Flower: "Flores Mayo",
                 Bird: "Mariana fruit-dove"
 
-            </div>
+            </div>*/}
          </div>
-      );
+      ); 
   }
 };
 
 
-export default miscData;
+export default Learn;
                 

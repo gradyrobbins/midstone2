@@ -15,7 +15,7 @@ class Card extends Component {
                        motto: {everything.motto} <br/>
                        flower: {everything.flower} <br/>
                        bird: {everything.bird} <br/>
-                       lorem: ipsum <br/><br/>
+                       
                     </div>
                 )
             }

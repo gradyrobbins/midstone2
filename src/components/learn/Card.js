@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import "./Card.css"
 
 class Card extends Component {
     render() {
@@ -7,7 +7,7 @@ class Card extends Component {
             <section className="everything">
             {
                 this.props.everything.map(everything=>
-                    <div key={everything.state_id}>
+                    <div className="Card" key={everything.state_id}>
                        name: {everything.name} <br/>
                        date of statehood: {everything.dateOfStatehood} <br/>
                        capital: {everything.capital} <br/>

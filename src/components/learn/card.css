@@ -1,5 +1,8 @@
-.card {
+.Card {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
 }

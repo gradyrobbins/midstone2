@@ -128,7 +128,8 @@ class List extends Component {
        
         { state_id: 55, name: "US Virgin Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Charlotte Amalie, St. Thomas", nicknames: "United in pride", motto: "", flower: "Yellow elder or yellow cedar", bird: "Yellow breast or banana quit"  },
 
-        { state_id: 56 name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  },
+        { state_id: 56, name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  }
+    ]
         
     state = {
        

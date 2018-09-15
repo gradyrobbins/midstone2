@@ -124,12 +124,12 @@ class List extends Component {
       
         { state_id: 53, name: "Guam", dateOfStatehood: "1 of 6 U.S. territories", capital: "Hagatna (Agana)", nicknames: "", motto: "Where America's day begins", flower: "Bougainvillea spectabilis", bird: "Marianas rose crown fruit dove"  },
         
-        
         { state_id: 54, name: "American_Samoa", dateOfStatehood: "1 of 6 U.S. territories", capital: "Pago Pago", nicknames: "The last frontier", motto: "Samoa Muamua le Atua (God is first in Samoa)", flower: "Paogo", bird: "Willow ptarmigan"  },
        
         { state_id: 55, name: "US Virgin Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Charlotte Amalie, St. Thomas", nicknames: "United in pride", motto: "", flower: "Yellow elder or yellow cedar", bird: "Yellow breast or banana quit"  },
+
+        { state_id: 56 name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  },
         
-    ]
     state = {
        
         everything: this.bigList

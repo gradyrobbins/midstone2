@@ -8,13 +8,13 @@ class Card extends Component {
             {
                 this.props.everything.map(everything=>
                     <div className="Card" key={everything.state_id}>
-                       name: {everything.name} <br/>
-                       date of statehood: {everything.dateOfStatehood} <br/>
-                       capital: {everything.capital} <br/>
-                       nicknames: {everything.nicknames} <br/>
-                       motto: {everything.motto} <br/>
-                       flower: {everything.flower} <br/>
-                       bird: {everything.bird} <br/>
+                       Name: {everything.name} <br/>
+                       Date of Statehood: {everything.dateOfStatehood} <br/>
+                       Capital: {everything.capital} <br/>
+                       Nicknames: {everything.nicknames} <br/>
+                       Motto: {everything.motto} <br/>
+                       Flower: {everything.flower} <br/>
+                       Bird: {everything.bird} <br/>
                        
                     </div>
                 )

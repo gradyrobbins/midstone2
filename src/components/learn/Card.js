@@ -20,7 +20,6 @@ class Card extends Component {
                 )
             }
             </section>
-            <div> Quarter: {} </div>
             </div>
         )
     }

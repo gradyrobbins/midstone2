@@ -6,9 +6,8 @@ import Login from './components/login/LoginForm'
 import Register from './components/login/RegisterForm'
 import Home from './home'
 import Learn from './components/learn/Learn'
-// import Card from './components/learn/Card'
 import Mycoins from './components/mycoincollection/mycoins';
-// import Card from './components/mycoincollection/mycoins'
+import User from './components/mycoincollection/User'
 export default class ApplicationViews extends Component {
 
   // Check if credentials are in local storage
@@ -53,8 +52,20 @@ export default class ApplicationViews extends Component {
       .then(allUsers => {
         newState.users = allUsers
       }).then(() => {this.setState(newState)})
-   }
-                     
+      
+      fetch("http://localhost:8088/state")
+      .then(r => r.json())
+      .then(state => newState.state = state)
+      .then(() => fetch("http://localhost:8088/quarter")
+      .then(r => r.json()))
+      .then(quarter => newState.quarter = quarter)
+      // .then(() => fetch("http://localhost:8088/users/{id}")
+      // .then(r => r.json()))
+      // .then(users => newState.users = users)
+      .then(() => this.setState(newState))
+    }
+    
+  ;
 
   render() {
     return (
@@ -68,7 +79,14 @@ export default class ApplicationViews extends Component {
           users={this.state.users} />
         }} />
         <Route exact path="/learn" component={Learn} />
-        <Route exact path="/mycoincollection" component={Mycoins} />
+        {/* <Route exact path="/mycoincollection" component={Mycoins} /> */}
+        <Route exact path="/mycoincollection" render={(props) => {
+          return <Mycoins users={this.state.users}  {...props}/>
+        }} />
+        
+        <Route exact path="/users" render={(props) => {
+                    return <User users={this.state.users} />
+                }} />
         
       </React.Fragment >
     )

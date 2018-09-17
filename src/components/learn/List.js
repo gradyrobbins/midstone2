@@ -130,16 +130,25 @@ class List extends Component {
 
         { state_id: 56, name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  }
     ]
-        
+    
+    quarterjoiner = [
+        {
+            quarter_id: 1,
+            user_id: 1,
+            state_id:  22,
+          },
+    ]
+
     state = {
        
-        everything: this.bigList
+        everything: this.bigList,
+        quarterjoiner: this.quarterjoiner
     }
 
     render() {
         return (
             <article className="kennel">
-                <Card everything={this.state.everything} />
+                <Card everything={this.state.everything} quarterjoiner={this.state.quarterjoiner}/>
                
             </article>
         )

@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 
 import Card from "./Card"
-
+import User from './../mycoincollection/User'
+import Mycoins from "../mycoincollection/mycoins";
 
 class List extends Component {
 
@@ -125,31 +126,47 @@ class List extends Component {
         { state_id: 53, name: "Guam", dateOfStatehood: "1 of 6 U.S. territories", capital: "Hagatna (Agana)", nicknames: "", motto: "Where America's day begins", flower: "Bougainvillea spectabilis", bird: "Marianas rose crown fruit dove"  },
         
         { state_id: 54, name: "American_Samoa", dateOfStatehood: "1 of 6 U.S. territories", capital: "Pago Pago", nicknames: "The last frontier", motto: "Samoa Muamua le Atua (God is first in Samoa)", flower: "Paogo", bird: "Willow ptarmigan"  },
-       
+        
         { state_id: 55, name: "US Virgin Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Charlotte Amalie, St. Thomas", nicknames: "United in pride", motto: "", flower: "Yellow elder or yellow cedar", bird: "Yellow breast or banana quit"  },
-
+        
         { state_id: 56, name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  }
+            
     ]
+    smallList = [
+        
+            {
+              username: "grady",
+              email: "grady@22.com",
+              password: "22",
+              id: 1
+            },
+            {
+              username: "Toby",
+              email: "toby@22.com",
+              password: "22",
+              id: 4
+            },
+            {
+              username: "Andrew",
+              email: "andrew@22.com",
+              password: "22",
+              id: 5
+            }
+          ]
     
-    quarterjoiner = [
-        {
-            quarter_id: 1,
-            user_id: 1,
-            state_id:  22,
-          },
-    ]
 
     state = {
        
         everything: this.bigList,
-        quarterjoiner: this.quarterjoiner
+        something: this.smallList
     }
 
     render() {
         return (
-            <article className="kennel">
-                <Card everything={this.state.everything} quarterjoiner={this.state.quarterjoiner}/>
-               
+            <article className="List">
+                <Card everything={this.state.everything} />
+               <User  something={this.state.something} />
+               <Mycoins something={this.state.something} />
             </article>
         )
     }

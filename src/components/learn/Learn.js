@@ -16,6 +16,9 @@ class Learn extends Component {
                     <List />
                 </div>
                 <br/>
+                <div>
+                    
+                </div>
  
          </div>
       ); 

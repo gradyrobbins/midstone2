@@ -11,10 +11,11 @@ export default class Mycoins  extends Component {
                 <NavBar />
                 <article className="UserList">
                         
-                        Map over data then return:
+                        Map over data which creates
                         <br/>
+                        a new array, 
                         <br/>
-                        all cards with 
+                        then return the array:  all cards with 
                         <br/>
                         <br/>
                         User ID:  1 "grady"

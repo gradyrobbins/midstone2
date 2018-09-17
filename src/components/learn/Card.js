@@ -4,7 +4,8 @@ import "./Card.css"
 class Card extends Component {
     render() {
         return (
-            <section className="everything">
+            <div>
+                <section className="everything">
             {
                 this.props.everything.map(everything=>
                     <div className="Card" key={everything.state_id}>
@@ -15,11 +16,12 @@ class Card extends Component {
                        Motto: {everything.motto} <br/>
                        Flower: {everything.flower} <br/>
                        Bird: {everything.bird} <br/>
-                       
                     </div>
                 )
             }
             </section>
+            <div> Quarter: {} </div>
+            </div>
         )
     }
 }

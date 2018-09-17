@@ -6,7 +6,9 @@ import Login from './components/login/LoginForm'
 import Register from './components/login/RegisterForm'
 import Home from './home'
 import Learn from './components/learn/Learn'
-import Card from './components/mycoincollection/mycoins'
+// import Card from './components/learn/Card'
+import Mycoins from './components/mycoincollection/mycoins';
+// import Card from './components/mycoincollection/mycoins'
 export default class ApplicationViews extends Component {
 
   // Check if credentials are in local storage
@@ -66,7 +68,7 @@ export default class ApplicationViews extends Component {
           users={this.state.users} />
         }} />
         <Route exact path="/learn" component={Learn} />
-        <Route exact path="/mycoincollection" component={Card} />
+        <Route exact path="/mycoincollection" component={Mycoins} />
         
       </React.Fragment >
     )

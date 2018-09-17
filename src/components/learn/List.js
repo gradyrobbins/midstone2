@@ -132,27 +132,7 @@ class List extends Component {
         { state_id: 56, name: "Northern Mariana Islands", dateOfStatehood: "1 of 6 U.S. territories", capital: "Saipan", nicknames: "", motto: "", flower: "Flores Mayo",  bird: "Mariana fruit-dove"  }
             
     ]
-    smallList = [
-        
-            {
-              username: "grady",
-              email: "grady@22.com",
-              password: "22",
-              id: 1
-            },
-            {
-              username: "Toby",
-              email: "toby@22.com",
-              password: "22",
-              id: 4
-            },
-            {
-              username: "Andrew",
-              email: "andrew@22.com",
-              password: "22",
-              id: 5
-            }
-          ]
+    
     
 
     state = {

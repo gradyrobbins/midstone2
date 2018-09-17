@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "./../learn/bloop.css"
-import Card from './../learn/Card'
 
 class User extends Component {
     render() {

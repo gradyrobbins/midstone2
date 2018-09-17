@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 
 import Card from "./Card"
-import User from './../mycoincollection/User'
-import Mycoins from "../mycoincollection/mycoins";
+// import User from './../mycoincollection/User'
+// import Mycoins from "../mycoincollection/mycoins";
 
 class List extends Component {
 
@@ -158,15 +158,13 @@ class List extends Component {
     state = {
        
         everything: this.bigList,
-        something: this.smallList
+        
     }
 
     render() {
         return (
             <article className="List">
                 <Card everything={this.state.everything} />
-               <User  something={this.state.something} />
-               <Mycoins something={this.state.something} />
             </article>
         )
     }

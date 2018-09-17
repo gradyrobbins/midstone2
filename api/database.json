@@ -41,6 +41,12 @@
       "email": "marymac@22.com",
       "password": "22",
       "id": 7
+    },
+    {
+      "username": "Molly",
+      "email": "mollypatrick@22.com",
+      "password": "22",
+      "id": 8
     }
   ],
   "state": [

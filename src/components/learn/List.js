@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import NavBar from "../nav/NavBar";
 
 
 
@@ -13,6 +14,10 @@ class List extends Component {
         
         return (
         <React.Fragment>
+            <div>
+                <NavBar />
+            </div>
+            
             <div>
                 {this.props.states.map(item => {
                     console.log(item)

@@ -1,34 +1,38 @@
 import React, { Component } from "react"
 
-import Card from "./Card"
+
 
 
 class List extends Component {
 
     
    
-       state = {
-          
-           st: []
-           
-       }
-
-    
-    componentDidMount() {
-        const newState = {}
-    
-        fetch("http://localhost:8088/state")
-            .then(r => r.json())
-            .then(r => newState.st = r)
-            .then(() => this.setState(newState))
-    }
+        
 
     render() {
-        console.log("after fetch, state:" + this.state.st)
+        
         return (
-            this.state.st.map(item => <Card everything={item}/>)
+        <React.Fragment>
+            <div>
+                {this.props.states.map(item => {
+                    console.log(item)
+                    return <div className="Card" key={item.state_id}>
+                                Name: {item.name} <br/>
+                                Date of Statehood: {item.Statehood} <br/>
+                                Capital: {item.Capital} <br/>
+                                Nicknames: {item.Nicknames} <br/>
+                                Motto: {item.Motto} <br/>
+                                Flower: {item.Flower} <br/>
+                                Bird: {item.Bird} <br/>
+                                </div>
+                        })
+                }
+           
+            </div>
+        </React.Fragment>
+            )
             
-        )
+        
     }
 }
 

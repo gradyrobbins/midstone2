@@ -1,22 +1,37 @@
 import React, { Component } from 'react'
 import "./../learn/bloop.css"
+import NavBar from '../nav/NavBar';
 
 class User extends Component {
     render() {
         return (
             <div>
+                <NavBar />
                 <section className="something">
-            {
-                this.props.something.map(something=>
-                    <div className="Card" key={something.id}>
-                       Name: {something.name} <br/>
-                       UserName: {something.userName} <br/>
-                       Email: {something.email} <br/>
-                      
-                    </div>
-                )
-            }
-            </section>
+                {
+                        this.props.users.map(user =>
+                            <div key={user.id} className="card card--user">
+                                <div className="card-body">
+                                    <h5 className="card-title">
+                                        
+                                    "user #: "{user.id}, {user.username}" 
+                                        
+                                    </h5>
+
+                                   
+                                    <div className="">
+                                    </div>
+                                    <a href="/register"
+                                    onClick={() => this.props.deleteUser(user.id)}
+                                    className="card-link">Delete User</a>
+
+                                </div>
+                             </div>
+                        )
+                    }
+                </section>
+
+                
             </div>
         )
     }

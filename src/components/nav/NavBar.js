@@ -21,6 +21,10 @@ class NavBar extends Component {
                         <Link className="nav-link"
                         to="/mycoincollection">My Coin Collection</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link"
+                        to="/users">All Users </Link>
+                    </li>
                     
                     
                 </ul>

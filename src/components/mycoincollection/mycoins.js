@@ -12,14 +12,6 @@ export default class Mycoins  extends Component {
             <div>
                 <NavBar />
                 
-                {/* <article  className="UserList">
-                    <h5>Import  card component to re-use </h5>
-                    <h5>Import props.something from LIST and Mycoins/></h5>
-                    <p>import from DB:  UserList </p>
-                    <p>import from DB:  JSON/Quarter</p>
-
-                    <p>Then execute FILTER/MAP function,  then  pass this information as props to the Card component which we are going to re-use to render/display MY COINS</p>
-                </article> */}
                 <section className="">
                     {
                         this.props.users.filter(user => user.id === currentUserID).map(user =>

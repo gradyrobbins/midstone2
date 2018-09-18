@@ -3,11 +3,13 @@ import "./bloop.css"
 
 class Card extends Component {
     render() {
+        console.log(this.props)
+        const everything=this.props.everything
         return (
             <div>
                 <section className="everything">
             {
-                this.props.everything.map(everything=>
+                // this.props.everything.map(everything=>
                     <div className="Card" key={everything.state_id}>
                        Name: {everything.name} <br/>
                        Date of Statehood: {everything.dateOfStatehood} <br/>
@@ -17,7 +19,7 @@ class Card extends Component {
                        Flower: {everything.flower} <br/>
                        Bird: {everything.bird} <br/>
                     </div>
-                )
+                // )
             }
             </section>
             </div>

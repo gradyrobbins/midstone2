@@ -10,16 +10,6 @@ export default Object.create(null, {
             .then(result => result.json())
         }
     },
-
-    //looky here. get All Ascend and call later for ascending order
-
-    // getAllAscend: {
-    //     value: (resource) => {
-    //         return fetch(`${remoteURL}/${resource}?_sort=date&_order=asc`)
-    //         .then(result => result.json())
-    //     }
-
-    // },
     
     getAll: {
         value: (resource) => {
@@ -27,6 +17,7 @@ export default Object.create(null, {
             .then(result => result.json())
         }
     },
+    
     delete: {
         value: (resource, id) => {
             return fetch(`${remoteURL}/${resource}/${id}`, {

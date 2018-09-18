@@ -6,7 +6,8 @@ export default class Mycoins  extends Component {
     render() {
         
         console.log("mycoins.js component.  this component needs:  users properties (props) of <app views /> and <card /> component", this.props.users)
-        
+        const currentUserID = JSON.parse(localStorage.getItem("credentials")).id
+        console.log(currentUserID);
         return (
             <div>
                 <NavBar />
@@ -21,7 +22,7 @@ export default class Mycoins  extends Component {
                 </article> */}
                 <section className="">
                     {
-                        this.props.users.map(user =>
+                        this.props.users.filter(user => user.id === currentUserID).map(user =>
                             <div key={user.id} className="card card--user">
                                 <div className="card-body">
                                     <h5 className="card-title">
@@ -29,7 +30,7 @@ export default class Mycoins  extends Component {
                                         "User Name: {user.username}" 
                                         
                                     {/* {
-                                        this.props.something
+                                        this.props.users.filter
                                         .filter(user => user.id === id)
                                         .map(user => <Card key={user.id}  {...this.props} />)
                                     } */}
@@ -39,6 +40,9 @@ export default class Mycoins  extends Component {
                                     <h6 >Has these quarters:</h6>
                                     <div className="">
                                     </div>
+                                    <a href="/register"
+                                    // onClick={() => this.props.deleteUser(user.id)}
+                                    className="card-link">Delete User</a>
 
                                 </div>
                              </div>

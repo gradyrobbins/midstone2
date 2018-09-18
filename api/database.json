@@ -47,6 +47,12 @@
       "email": "mollypatrick@22.com",
       "password": "22",
       "id": 8
+    },
+    {
+      "username": "grady",
+      "email": "grady@22.com",
+      "password": "22",
+      "id": 9
     }
   ],
   "state": [

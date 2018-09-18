@@ -8,6 +8,7 @@ import Home from './home'
 import Learn from './components/learn/Learn'
 import Mycoins from './components/mycoincollection/mycoins';
 import User from './components/mycoincollection/User'
+import List from './components/learn/List'
 export default class ApplicationViews extends Component {
 
   // Check if credentials are in local storage
@@ -15,9 +16,9 @@ export default class ApplicationViews extends Component {
 
   state = {
     users: [],
-    state: [],
+    states: [],
     quarter: [],
-    isLoaded: false
+    // isLoaded: false
   }
 
   addUser = users => DataManager.add("users", users)
@@ -51,17 +52,11 @@ export default class ApplicationViews extends Component {
   DataManager.getAll("users")
       .then(allUsers => {
         newState.users = allUsers
-      }).then(() => {this.setState(newState)})
-      
-      fetch("http://localhost:8088/state")
-      .then(r => r.json())
-      .then(state => newState.state = state)
-      .then(() => fetch("http://localhost:8088/quarter")
-      .then(r => r.json()))
+      })
+      .then(()=>DataManager.getAll("state"))
+      .then(states => newState.states = states)
+      .then(()=>DataManager.getAll("quarter"))
       .then(quarter => newState.quarter = quarter)
-      // .then(() => fetch("http://localhost:8088/users/{id}")
-      // .then(r => r.json()))
-      // .then(users => newState.users = users)
       .then(() => this.setState(newState))
     }
     
@@ -72,14 +67,17 @@ export default class ApplicationViews extends Component {
       <React.Fragment>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/list" render={(props) => {
+          return <List {...props}
+          states={this.state.states}/>
+          }} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/register" render={(props) => {
           return <Register {...props}
           addUser={this.addUser}
           users={this.state.users} />
         }} />
-        <Route exact path="/learn" component={Learn} />
-        {/* <Route exact path="/mycoincollection" component={Mycoins} /> */}
+        <Route exact path="/learn" component={Learn } states={this.state.states} />
         <Route exact path="/mycoincollection" render={(props) => {
           return <Mycoins users={this.state.users} deleteUser={this.deleteUser} {...props}/>
         }} />

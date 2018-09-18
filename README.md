@@ -1,4 +1,4 @@
-Here is my Midstone project: a modern single page application built with React.  Right now, the data is hard coded into my app, eventually it will from a remote, persistent storage system - also known as an API!
+Here is my Midstone project: a modern single page application built with React.  The data is being fetched and rendered from a remote, persistent storage system - also known as an API!
 
 Here is a link to my proposal; including MVP and ERD.
 

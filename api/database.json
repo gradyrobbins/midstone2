@@ -65,22 +65,22 @@
     {
       "state_id": 1,
       "name": "Delaware",
-      "statehood": "December 7, 1787",
-      "capital": "Dover",
-      "nicknames": "First State, Diamond State",
-      "motto": "Liberty and Independence",
-      "flower": "Peach Blossom",
-      "bird": "Blue hen chicken"
+      "Statehood": "December 7, 1787",
+      "Capital": "Dover",
+      "Nicknames": "First State, Diamond State",
+      "Motto": "Liberty and Independence",
+      "Flower": "Peach Blossom",
+      "Bird": "Blue hen chicken"
     },
     {
       "state_id": 2,
       "name": "Pennsylvania",
-      "statehood": "December 12, 1787",
-      "capital": "Harrisburg",
-      "nicknames": "Keystone State",
-      "motto": "Virtue, Liberty and Independence",
-      "flower": "Mountain Laurel",
-      "bird": "Ruffed Goose"
+      "Statehood": "December 12, 1787",
+      "Capital": "Harrisburg",
+      "Nicknames": "Keystone State",
+      "Motto": "Virtue, Liberty and Independence",
+      "Flower": "Mountain Laurel",
+      "Bird": "Ruffed Goose"
     },
     {
       "state_id": 3,

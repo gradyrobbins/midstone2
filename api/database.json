@@ -53,6 +53,12 @@
       "email": "grady@22.com",
       "password": "22",
       "id": 9
+    },
+    {
+      "username": "dummyacct",
+      "email": "dummy@22.com",
+      "password": "22",
+      "id": 10
     }
   ],
   "state": [

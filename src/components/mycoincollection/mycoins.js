@@ -27,7 +27,7 @@ export default class Mycoins  extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         
-                                        "User Name: {user.username}" 
+                                        "Hello, {user.username}" 
                                         
                                     {/* {
                                         this.props.users.filter
@@ -37,12 +37,10 @@ export default class Mycoins  extends Component {
                                 
                                     </h5>
 
-                                    <h6 >Has these quarters:</h6>
+                                    <h6 >These are your quarters:</h6>
                                     <div className="">
                                     </div>
-                                    <a href="/register"
-                                    // onClick={() => this.props.deleteUser(user.id)}
-                                    className="card-link">Delete User</a>
+                                    
 
                                 </div>
                              </div>

@@ -39,6 +39,9 @@ export default class Mycoins  extends Component {
                                     <h6 >Has these quarters:</h6>
                                     <div className="">
                                     </div>
+                                    <a href="/register"
+                                    onClick={() => this.props.deleteUser(user.id)}
+                                    className="card-link">Delete User</a>
 
                                 </div>
                              </div>

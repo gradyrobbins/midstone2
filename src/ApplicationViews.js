@@ -79,7 +79,7 @@ export default class ApplicationViews extends Component {
         }} />
         <Route exact path="/learn" component={Learn } states={this.state.states} />
         <Route exact path="/mycoincollection" render={(props) => {
-          return <Mycoins users={this.state.users} deleteUser={this.deleteUser} {...props}/>
+          return <Mycoins users={this.state.users} quarters={this.state.quarter} states={this.state.states}deleteUser={this.deleteUser} {...props}/>
         }} />
         
         <Route exact path="/users" render={(props) => {

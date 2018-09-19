@@ -18,6 +18,13 @@ export default Object.create(null, {
         }
     },
     
+    getAllUserData: {
+        value: (resource, id) => {
+            return fetch(`${remoteURL}/${resource}?user_id=${id}`)
+            .then(result => result.json())
+        }
+    },
+    
     delete: {
         value: (resource, id) => {
             return fetch(`${remoteURL}/${resource}/${id}`, {

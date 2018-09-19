@@ -14,7 +14,8 @@ class User extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         
-                                    "user #: "{user.id}, {user.username}" 
+                                    user ID: {user.id} <br/>
+                                    Name: {user.username}
                                         
                                     </h5>
 

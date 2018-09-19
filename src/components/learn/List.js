@@ -20,7 +20,7 @@ class List extends Component {
             
             <div>
                 {this.props.states.map(item => {
-                    console.log(item)
+                    // console.log(item)
                     return <div className="Card" key={item.state_id}>
                                 Name: {item.name} <br/>
                                 Date of Statehood: {item.Statehood} <br/>

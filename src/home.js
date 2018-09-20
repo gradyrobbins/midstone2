@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './components/nav/NavBar'
+import map from './img/USMap.png'
+import homecss from './homecss.css'
 class Home extends Component {
   render() {
       return (
@@ -9,7 +11,7 @@ class Home extends Component {
                 </div>
                 
                 <br/>
-                    <h3>Img. 'Murica</h3>
+                    <img src={map} alt="USMap" className="USMap"/> 
             </div>
          
       );

@@ -2,13 +2,8 @@ import React, { Component } from "react"
 import NavBar from "../nav/NavBar";
 
 
-
-
 class List extends Component {
 
-    
-   
-        
 
     render() {
         

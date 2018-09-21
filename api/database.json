@@ -615,47 +615,47 @@
     {
       "quarter_id": "1",
       "user_id": "1",
-      "state_id": "22"
+      "state_id": 22
     },
     {
       "quarter_id": "2",
       "user_id": "1",
-      "state_id": "33"
+      "state_id": 33
     },
     {
       "quarter_id": "3",
       "user_id": "2",
-      "state_id": "33"
+      "state_id": 33
     },
     {
       "quarter_id": "4",
       "user_id": "3",
-      "state_id": "33"
+      "state_id": 33
     },
     {
       "quarter_id": "5",
       "user_id": "1",
-      "state_id": "41"
+      "state_id": 41
     },
     {
       "quarter_id": "6",
       "user_id": "1",
-      "state_id": "14"
+      "state_id": 14
     },
     {
       "quarter_id": "7",
       "user_id": "1",
-      "state_id": "37"
+      "state_id": 37
     },
     {
       "quarter_id": "8",
       "user_id": "2",
-      "state_id": "50"
+      "state_id": 50
     },
     {
       "quarter_id": "9",
       "user_id": "2",
-      "state_id": "19"
+      "state_id": 19
     }
   ]
 }

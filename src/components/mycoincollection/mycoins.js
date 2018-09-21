@@ -7,6 +7,7 @@ export default class Mycoins  extends Component {
         specificUser:[],
         state:[],
         findit:[],
+        newArray:[],
     };
     
     lastminutefunction() {
@@ -14,7 +15,7 @@ export default class Mycoins  extends Component {
         let newState= {
             
         }
-        
+
         DataManager.getAll("state")
         .then(state => newState.state = state)
         
@@ -29,23 +30,27 @@ export default class Mycoins  extends Component {
             // console.log("this.state.state", this.state.state );
            
             console.log("findit :" , findit);
+            this.state.newArray.push(findit)
+            console.log("newArray" , this.state.newArray);
             // console.log("e.state_id", e.state_id);
             
         })
         
-        }
+    }
+    
+    //  return console.log(newState)     
+    )
+    
+}
         
-        //  return console.log(newState)     
-        )}
-        
-        componentDidMount() {
-            
-            const currentUser = JSON.parse(localStorage.getItem("credentials"))
+componentDidMount() {
+    
+    const currentUser = JSON.parse(localStorage.getItem("credentials"))
 
-DataManager.getAllUserData("quarter", currentUser.id)
-.then(specificUser => this.setState({specificUser : specificUser}))
+    DataManager.getAllUserData("quarter", currentUser.id)
+    .then(specificUser => this.setState({specificUser : specificUser}))
 
-this.lastminutefunction()
+    this.lastminutefunction()
 }
 
 
@@ -75,11 +80,11 @@ render() {
                 <a href="/" className="card-link">Add a quarter to your collection</a>
             
                 <section>
-                {this.state.specificUser.map(item => {
+                {this.state.newArray.map(item => {
                     // console.log(item)
-                    return <div className="Card" key={item.quarter_id}>
-                                State_id: {item.state_id} <br/>
-
+                    return <div className="Card" key={item.state_id}>
+                                {/* State_id: {item.state_id} <br/> */}
+                                Name: {item.name}
                                 <a href="/"
                                 
                                 className="card-link">Delete this quarter from your collection</a>
@@ -88,7 +93,7 @@ render() {
                 }
               
                 </section>
-
+                <section></section>
             </div>
         );
     }

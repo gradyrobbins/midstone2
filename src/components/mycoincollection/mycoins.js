@@ -18,29 +18,21 @@ export default class Mycoins  extends Component {
 
         DataManager.getAll("state")
         .then(state => newState.state = state)
-        
         .then(() => this.setState(newState))
         .then(()=>{
             let plainExercises = this.state.state
             this.state.specificUser.map(e => { const findit = plainExercises.find(function (taco) {
             //  console.log("taco " , taco.state_id);
             return taco.state_id === e.state_id})
-        
-        
             // console.log("this.state.state", this.state.state );
-           
             console.log("findit :" , findit);
             this.state.newArray.push(findit)
             console.log("newArray" , this.state.newArray);
             // console.log("e.state_id", e.state_id);
-            
         })
-        
     }
-    
     //  return console.log(newState)     
     )
-    
 }
         
 componentDidMount() {
@@ -84,7 +76,13 @@ render() {
                     // console.log(item)
                     return <div className="Card" key={item.state_id}>
                                 {/* State_id: {item.state_id} <br/> */}
-                                Name: {item.name}
+                                Name: {item.name} <br/>
+                                {/* Date of Statehood: {item.Statehood} <br/>
+                                Capital: {item.Capital} <br/>
+                                Nicknames: {item.Nicknames} <br/>
+                                Motto: {item.Motto} <br/>
+                                Flower: {item.Flower} <br/>
+                                Bird: {item.Bird} <br/> */}
                                 <a href="/"
                                 
                                 className="card-link">Delete this quarter from your collection</a>

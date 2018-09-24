@@ -635,7 +635,8 @@
     {
       "quarter_id": 5,
       "user_id": 2,
-      "state_id": 11
+      "state_id": 11,
+      "name": "missouri"
     },
     {
       "quarter_id": 6,

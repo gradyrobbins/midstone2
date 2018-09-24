@@ -21,7 +21,7 @@ DataManager.getAllUserData("quarter", currentUser.id)
         console.log("this.state.specificUser's collection = ", this.state.specificUser)    
         // console.log("this.props.states[state_id = 49] = ", this.props.states[49])    
         console.log("this.props.states = ", this.props.states)    
-        // const bloop = this.props.states.map(e => e.state_id === this.state.specificUser.state_id) || {}
+        // const bloop = this.state.specificUser.map(e => e.state_id === this.props.states.state_id) || {}
         // console.log("bloop = ", bloop)
         // console.log("this.props.states.map()", )
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
@@ -34,7 +34,9 @@ DataManager.getAllUserData("quarter", currentUser.id)
             <div>
                 <NavBar />
                
-                "Hello, {currentUser.username}, here are your quarters: " 
+                Hello, {currentUser.username}, here are your quarters: 
+
+                <section>add a quarter  <button>*inoperative* button</button></section>
 
                 <section>
                     {this.state.specificUser.map(taco => {
@@ -42,14 +44,14 @@ DataManager.getAllUserData("quarter", currentUser.id)
                         return <div className="Card" key={taco.quarter_id}>
                                     {/* Quarter_id: {taco.quarter_id} <br/> */}
                                     State_id: {taco.state_id} <br/>
+                                    name: {taco.name}
                                 
-                                
+                                    <button>*inoperative* delete this quarter</button>
                                     </div>
                             })
                     }
               
                 </section>
-                <section>add a quarter with this <button>button</button></section>
 
             </div>
         );

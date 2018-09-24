@@ -654,8 +654,18 @@
     },
     {
       "quarter_id": 9,
-      "user_id": 3,
-      "state_id": 19
+      "user_id": 1,
+      "state_id": 28
+    },
+    {
+      "quarter_id": 10,
+      "user_id": 1,
+      "state_id": 16
+    },
+    {
+      "quarter_id": 11,
+      "user_id": 1,
+      "state_id": 36
     }
   ]
 }

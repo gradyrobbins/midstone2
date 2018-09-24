@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import NavBar from "../nav/NavBar";
-
-
+// import mycoins from "../mycoincollection/mycoins"
 
 
 class List extends Component {
@@ -22,7 +21,7 @@ class List extends Component {
                 {this.props.states.map(item => {
                     // console.log(item)
                     return <div className="Card" key={item.state_id}>
-                                Name: {item.name} <br/>
+                                {item.name} <br/><br/>
                                 Date of Statehood: {item.Statehood} <br/>
                                 Capital: {item.Capital} <br/>
                                 Nicknames: {item.Nicknames} <br/>

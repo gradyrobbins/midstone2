@@ -18,10 +18,12 @@ DataManager.getAllUserData("quarter", currentUser.id)
 
 
     render() {
-        console.log("this.state.specificUser = ", this.state.specificUser)    
-        console.log("this.props.states[state_id = 49] = ", this.props.states[49])    
+        console.log("this.state.specificUser's collection = ", this.state.specificUser)    
+        // console.log("this.props.states[state_id = 49] = ", this.props.states[49])    
+        console.log("this.props.states = ", this.props.states)    
         // const bloop = this.props.states.map(e => e.state_id === this.state.specificUser.state_id) || {}
         // console.log("bloop = ", bloop)
+        // console.log("this.props.states.map()", )
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
         // console.log("mycoins.js component. props.users =" , this.props.users , "props.quarters =", this.props.quarters)
         // console.log(currentUser);
@@ -35,11 +37,11 @@ DataManager.getAllUserData("quarter", currentUser.id)
                 "Hello, {currentUser.username}, here are your quarters: " 
 
                 <section>
-                    {this.state.specificUser.map(item => {
-                        console.log("a" , item)
-                        return <div className="Card" key={item.quarter_id}>
-                                    {/* Quarter_id: {item.quarter_id} <br/> */}
-                                    State_id: {item.state_id} <br/>
+                    {this.state.specificUser.map(taco => {
+                        // console.log("taco =" , taco)
+                        return <div className="Card" key={taco.quarter_id}>
+                                    {/* Quarter_id: {taco.quarter_id} <br/> */}
+                                    State_id: {taco.state_id} <br/>
                                 
                                 
                                     </div>

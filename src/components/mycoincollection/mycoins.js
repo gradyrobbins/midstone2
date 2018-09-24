@@ -45,6 +45,7 @@ DataManager.getAllUserData("quarter", currentUser.id)
               
                 </section>
 
+
             </div>
         );
     }

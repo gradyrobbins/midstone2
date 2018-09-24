@@ -17,7 +17,6 @@ class User extends Component {
                                     {user.username}
                                     </h5>
                                     <h6>Needs these quarters:  <br/>/build a function to return what they need/</h6>
-                                   
                                     <div className="">
                                     </div>
                                     {/* <a href="/register"

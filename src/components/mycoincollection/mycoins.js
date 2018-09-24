@@ -18,7 +18,7 @@ DataManager.getAllUserData("quarter", currentUser.id)
 
 
     render() {
-        console.log("state", this.state.specificUser)        
+        console.log("this.state.specificUser's quarters", this.state.specificUser)        
         // console.log("mycoins.js component. props.users =" , this.props.users , "props.quarters =", this.props.quarters)
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
         // console.log(currentUser);
@@ -33,15 +33,16 @@ DataManager.getAllUserData("quarter", currentUser.id)
                 "Hello, {currentUser.username}, here are your quarters: " 
                 
                 <section>
-                {this.state.specificUser.map(item => {
-                    // console.log(item)
-                    return <div className="Card" key={item.quarter_id}>
-                                State_id: {item.state_id} <br/>
-                               
-                               
-                                </div>
-                        })
-                }
+                    {this.state.specificUser.map(item => {
+                        // console.log(item)
+                        return <div className="Card" key={item.quarter_id}>
+                                    Quarter_id: {item.quarter_id} <br/>
+                                    State_id: {item.state_id} <br/>
+                                
+                                
+                                    </div>
+                            })
+                    }
               
                 </section>
 

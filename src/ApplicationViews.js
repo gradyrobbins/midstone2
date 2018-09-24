@@ -5,7 +5,6 @@ import HomePage from './components/homepage/HomePage'
 import Login from './components/login/LoginForm'
 import Register from './components/login/RegisterForm'
 import Home from './home'
-import Learn from './components/learn/Learn'
 import Mycoins from './components/mycoincollection/mycoins';
 import User from './components/mycoincollection/User'
 import List from './components/learn/List'
@@ -77,13 +76,13 @@ export default class ApplicationViews extends Component {
           addUser={this.addUser}
           users={this.state.users} />
         }} />
-        <Route exact path="/learn" component={Learn } states={this.state.states} />
+        {/* <Route exact path="/learn" component={Learn } states={this.state.states} /> */}
         <Route exact path="/mycoincollection" render={(props) => {
-          return <Mycoins users={this.state.users} quarters={this.state.quarter} states={this.state.states}deleteUser={this.deleteUser} {...props}/>
+          return <Mycoins users={this.state.users} quarters={this.state.quarter} states={this.state.states} {...props}/>
         }} />
         
         <Route exact path="/users" render={(props) => {
-                    return <User users={this.state.users} />
+                    return <User users={this.state.users} deleteUser={this.deleteUser}/>
                 }} />
         
       </React.Fragment >

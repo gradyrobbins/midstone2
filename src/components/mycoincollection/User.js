@@ -14,17 +14,17 @@ class User extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title">
                                         
-                                    user ID: {user.id} <br/>
+                                    user.id: {user.id} <br/>
                                     Name: {user.username}
                                         
                                     </h5>
-
+                                    <h6>Needs these quarters:  /build function to return what's needed/</h6>
                                    
                                     <div className="">
                                     </div>
-                                    <a href="/register"
+                                    {/* <a href="/register"
                                     onClick={() => this.props.deleteUser(user.id)}
-                                    className="card-link">Delete User</a>
+                                    className="card-link">Delete User</a> */}
 
                                 </div>
                              </div>

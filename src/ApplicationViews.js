@@ -58,7 +58,6 @@ export default class ApplicationViews extends Component {
       .then(quarter => newState.quarter = quarter)
       .then(() => this.setState(newState))
     }
-    
   ;
 
   render() {

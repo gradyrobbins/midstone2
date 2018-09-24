@@ -13,12 +13,10 @@ class User extends Component {
                             <div key={user.id} className="card card--user">
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        
-                                    user.id: {user.id} <br/>
-                                    Name: {user.username}
-                                        
+                                    {/* user.id: {user.id} <br/> */}
+                                    {user.username}
                                     </h5>
-                                    <h6>Needs these quarters:  /build function to return what's needed/</h6>
+                                    <h6>Needs these quarters:  <br/>/build a function to return what they need/</h6>
                                    
                                     <div className="">
                                     </div>

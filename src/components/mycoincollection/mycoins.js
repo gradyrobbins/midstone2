@@ -80,19 +80,19 @@ let yyy = missingStateIDs.map(e =>  this.props.states.find(state => state.state_
 // find function which matches specificuser.state_id === this.props.states.state_id; then return an {} .  should be able to map over this onto cards.
 
         return (
-            <div>
+            <div className="container">
                 <NavBar />
                
                 Hello, {currentUser.username}, here are your quarters: 
-
-                <section>
+                <div className="row">
+                <section className="col">
                     {xxx.map(taco => 
                     
                     {
                         // console.log("taco =" , taco)
                         return <div className="Card" key={taco.state_id}>
                                     
-                                    State name: {taco.name}
+                                    i have State name: {taco.name}
                                 </div>
                             }
                             
@@ -101,6 +101,23 @@ let yyy = missingStateIDs.map(e =>  this.props.states.find(state => state.state_
               
                 </section>
 
+
+                <section className="col">
+                    {yyy.map(taco => 
+                    
+                    {
+                        // console.log("taco =" , taco)
+                        return <div className="Card" key={taco.state_id}>
+                                    
+                                    i need State name: {taco.name}
+                                </div>
+                            }
+                            
+                            )
+                    }
+              
+                </section>
+                </div>
             </div>
         );
     }

@@ -10,23 +10,23 @@ componentDidMount() {
     const currentUser = JSON.parse(localStorage.getItem("credentials"))
 
     DataManager.getAllUserData("quarter", currentUser.id)
-        .then(specificUser => this.setState({specificUser : specificUser}))
+        .then(thisusersquarters => this.setState({thisusersquarters : thisusersquarters}))
 }
 
 state = {
-    specificUser:[],
+    thisusersquarters:[],
 };
    
 render() {
     const currentUser = JSON.parse(localStorage.getItem("credentials"))
-        // console.log("this.state.specificUser's collection = ", this.state.specificUser)    
-        // console.log("this.state.specificUser's collection[0] = ", this.state.specificUser[0])    
-        // console.log("this.state.specificUser's collection[0].state_id = ", this.state.specificUser[0].state_id)    
-        // console.log("this.state.specificUser's collection[1] = ", this.state.specificUser[1])    
-        // console.log("this.state.specificUser's collection[1].state_id = ", this.state.specificUser[1].state_id)    
+        // console.log("this.state.thisusersquarters's collection = ", this.state.thisusersquarters)    
+        // console.log("this.state.thisusersquarters's collection[0] = ", this.state.thisusersquarters[0])    
+        // console.log("this.state.thisusersquarters's collection[0].state_id = ", this.state.thisusersquarters[0].state_id)    
+        // console.log("this.state.thisusersquarters's collection[1] = ", this.state.thisusersquarters[1])    
+        // console.log("this.state.thisusersquarters's collection[1].state_id = ", this.state.thisusersquarters[1].state_id)    
         // console.log("this.props.states[state_id = 49] = ", this.props.states[49])    
         // console.log("this.props.states.state_id =", this.props.states.state_id)
-        // const xxx = this.state.specificUser.map(e =>  this.props.states.find(state => state.state_id === e.state_id) ) || {} 
+        // const xxx = this.state.thisusersquarters.map(e =>  this.props.states.find(state => state.state_id === e.state_id) ) || {} 
         // console.log("mycoins.js component. props.users =" , this.props.users , "props.quarters =", this.props.quarters)
         // console.log(currentUser);
         
@@ -44,7 +44,7 @@ render() {
 // }
 
 //map over the current/specific user's collection and return an array[] of their collection.
-const myStateIDs = this.state.specificUser.map(getstateID) || {} 
+const myStateIDs = this.state.thisusersquarters.map(getstateID) || {} 
 // console.log("my own collection's state_id's" , myStateIDs)
    
 //map over the entire list of states/territories and return an array [] of state_id's
@@ -74,7 +74,7 @@ var missingStateIDs = allStateIDs.filter( function(n) { return !this.has(n) }, n
 let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
 
-// return:  map the "got 'em " array over card, map the "need 'em " array over card; render to DOM
+// return:  map the "got 'em[] " array over card, map the "need 'em []" array over card; render to DOM
 
         return (
             <div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import NavBar from "../nav/NavBar";
-// import mycoins from "../mycoincollection/mycoins"
 
 
 class List extends Component {

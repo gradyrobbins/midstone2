@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import NavBar from './../nav/NavBar';
-import DataManager from './../../modules/DataManager'
+// import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
 class JokeList extends Component{
 
@@ -18,7 +18,7 @@ class JokeList extends Component{
                         onClick={() => {
                             this.props.history.push("/jokes/new")}
                         }>
-                    Click to add a new joke
+                    Click to add a new 'state' *prev: joke
                 </button>
             </div>
             <section className="jokes">

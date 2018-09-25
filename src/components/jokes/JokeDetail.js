@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 // import JokeEditForm from '.jokes/JokeEditForm'
+import NavBar from './../nav/NavBar'
 
 export default class JokeDetail extends Component {
     render() {
@@ -11,6 +12,8 @@ export default class JokeDetail extends Component {
         const joke = this.props.jokes.find(a => a.id === parseInt(this.props.match.params.jokeId, 0)) || {}
 
         return (
+            <div>
+            <NavBar />
             <section className="joke">
                 <div key={joke.id} className="detail-card">
                     <div className="card-body">
@@ -19,10 +22,10 @@ export default class JokeDetail extends Component {
                         <br/>
                         <h6>details: {joke.punchline} </h6>
                        
-                        <a
+                        {/* <a
                             onClick={() => this.props.deleteJoke(joke.id)
                                             .then(() => this.props.history.push("/jokes"))}
-                            className="card-link"><button>Delete</button></a>
+                            className="card-link"><button>Delete</button></a> */}
                             <br/>
                             <a
                             onClick={() => this.props.history.push(`/jokes/edit/${joke.id}`)}
@@ -30,6 +33,7 @@ export default class JokeDetail extends Component {
                     </div>
                 </div>
             </section>
+            </div>
         )
     }
 }

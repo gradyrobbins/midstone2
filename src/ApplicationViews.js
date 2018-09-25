@@ -76,7 +76,6 @@ export default class ApplicationViews extends Component {
           addUser={this.addUser}
           users={this.state.users} />
         }} />
-        {/* <Route exact path="/learn" component={Learn } states={this.state.states} /> */}
         <Route exact path="/mycoincollection" render={(props) => {
           return <Mycoins users={this.state.users} quarters={this.state.quarter} states={this.state.states} matchlist={this.state.matchlist}{...props}/>
         }} />

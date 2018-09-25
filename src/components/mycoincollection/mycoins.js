@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
 import NavBar from '../nav/NavBar';
 import DataManager from './../../modules/DataManager'
-export default class Mycoins  extends Component {
+import "bootstrap/dist/css/bootstrap.min.css"
 
+export default class Mycoins  extends Component {
 
 componentDidMount() {
     
-const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    const currentUser = JSON.parse(localStorage.getItem("credentials"))
 
-DataManager.getAllUserData("quarter", currentUser.id)
-    .then(specificUser => this.setState({specificUser : specificUser}))
-    
+    DataManager.getAllUserData("quarter", currentUser.id)
+        .then(specificUser => this.setState({specificUser : specificUser}))
 }
-
-
 
 state = {
     specificUser:[],
 };
    
-
-
-    render() {
-        const currentUser = JSON.parse(localStorage.getItem("credentials"))
+render() {
+    const currentUser = JSON.parse(localStorage.getItem("credentials"))
         // console.log("this.state.specificUser's collection = ", this.state.specificUser)    
         // console.log("this.state.specificUser's collection[0] = ", this.state.specificUser[0])    
         // console.log("this.state.specificUser's collection[0].state_id = ", this.state.specificUser[0].state_id)    
@@ -35,11 +31,11 @@ state = {
         // console.log(currentUser);
         
 
-//function to extract the state_id property for later use
-function getstateID(item) {
-    var bloop = item.state_id;
-    return bloop ;
-}
+    //function to extract the state_id property from inside the array of objects for later use
+    function getstateID(item) {
+        var bloop = item.state_id;
+        return bloop ;
+    }
 
 //function to extract the state's name property out of an object
 // function getstatename(item) {
@@ -49,15 +45,15 @@ function getstateID(item) {
 
 //map over the current/specific user's collection and return an array[] of their collection.
 const myStateIDs = this.state.specificUser.map(getstateID) || {} 
-console.log("my own collection's state_id's" , myStateIDs)
+// console.log("my own collection's state_id's" , myStateIDs)
    
 //map over the entire list of states/territories and return an array [] of state_id's
 const allStateIDs = this.props.states.map(getstateID) || {}
-console.log("entire USA state_id's", allStateIDs)    
+// console.log("entire USA state_id's", allStateIDs)    
 
-
+//this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
 function compare(arr1,arr2){
-const matches =[];
+    const matches =[];
   
     arr1.forEach((e1)=>arr2.forEach((e2)=>
         {if (e1 === e2){matches.push(e1)}}
@@ -65,50 +61,45 @@ const matches =[];
     return matches;
 }
 
+//here is where i invoke compare()  as defined above
 let matchedStateIDs = compare(myStateIDs, allStateIDs);
-console.log("matched state_id's: ", matchedStateIDs)
+// console.log("matched state_id's: ", matchedStateIDs)
 
+//this maps over the matched ID's and link them to === state_id's in the master list which was passed in via props
+let gotem = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
-let xxx = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
-
-
+//the below function was based on: https://stackoverflow.com/questions/40537972/compare-2-arrays-and-show-unmatched-elements-from-array-1
 var missingStateIDs = allStateIDs.filter( function(n) { return !this.has(n) }, new Set(myStateIDs) );
-console.log("missing :" , missingStateIDs);
-let yyy = missingStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
+// console.log("missing :" , missingStateIDs);
+let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
-// specific user is in state.  
-// find function which matches specificuser.state_id === this.props.states.state_id; then return an {} .  should be able to map over this onto cards.
+
+// return:  map the "got 'em " array over card, map the "need 'em " array over card; render to DOM
 
         return (
             <div>
                 <NavBar />
-            <div className="container">
+                    <div className="container">
                 
                     Hello, {currentUser.username}, here are your quarters: 
                     <div className="row">
                     <section className="col">
-                        {xxx.map(taco => 
-                        
+                        {gotem.map(taco => 
                         {
                             // console.log("taco =" , taco)
                             return <div className="Card" key={taco.state_id}>
-                                        
                                         I have : {taco.name}
                                     </div>
                                 }
-                                
                                 )
                         }
-                
                     </section>
 
-
                     <section className="col">
-                        {yyy.map(taco => 
+                        {needem.map(taco => 
                         {
                             // console.log("taco =" , taco)
                             return <div className="Card" key={taco.state_id}>
-                                        
                                         I need :  {taco.name}
                                     </div>
                                 }
@@ -117,7 +108,7 @@ let yyy = missingStateIDs.map(e =>  this.props.states.find(state => state.state_
                     </section>
                     </div>
                 </div>
-                </div>
+            </div>
         );
     }
 }

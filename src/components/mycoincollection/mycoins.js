@@ -3,10 +3,6 @@ import NavBar from '../nav/NavBar';
 import DataManager from './../../modules/DataManager'
 export default class Mycoins  extends Component {
 
-state = {
-    specificUser:[],
-    bloop: []
-};
 
 componentDidMount() {
     
@@ -17,7 +13,12 @@ DataManager.getAllUserData("quarter", currentUser.id)
     
 }
 
-
+     
+state = {
+    specificUser:[],
+    bloop: this.bloop
+};
+   
 
     render() {
         const currentUser = JSON.parse(localStorage.getItem("credentials"))
@@ -29,19 +30,20 @@ DataManager.getAllUserData("quarter", currentUser.id)
         // console.log("this.props.states[state_id = 49] = ", this.props.states[49])    
         // console.log("this.props.states.state_id =", this.props.states.state_id)
         // console.log("this.props.states = ", this.props.states)    
-        
-        
-        function getstateID(item) {
-            
-            var bloop = item.state_id;
-            return bloop ;
-        }
-        const bloop = this.state.specificUser.map(getstateID) || {} 
-        console.log("bloop" , bloop)
-        
         // const bloop = this.state.specificUser.map(e =>  this.props.states.find(state => state.state_id === e.state_id) ) || {} 
         // console.log("mycoins.js component. props.users =" , this.props.users , "props.quarters =", this.props.quarters)
         // console.log(currentUser);
+        
+        
+function getstateID(item) {
+    
+    var bloop = item.state_id;
+    return bloop ;
+}
+
+const bloop = this.state.specificUser.map(getstateID) || {} 
+console.log("bloop" , bloop)
+
         
 
 // specific user is in state.  
@@ -56,7 +58,7 @@ DataManager.getAllUserData("quarter", currentUser.id)
                     {this.state.specificUser.map(taco => 
                     
                     {
-                        console.log("taco =" , taco)
+                        // console.log("taco =" , taco)
                         return <div className="Card" key={taco.quarter_id}>
                                     Quarter_id: {taco.quarter_id} <br/>
                                     State_id: {taco.state_id} <br/>

@@ -46,7 +46,7 @@
       "username": "dummyacct",
       "email": "dummy@22.com",
       "password": "22",
-      "id":8
+      "id": 8
     }
   ],
   "state": [
@@ -609,6 +609,13 @@
       "Motto": "",
       "Flower": "Flores Mayo",
       "Bird": "Mariana fruit-dove"
+    }
+  ],
+  "jokes": [
+    {
+      "setup": "knockknock2",
+      "punchline": "who's there",
+      "id": 1
     }
   ],
   "quarter": [

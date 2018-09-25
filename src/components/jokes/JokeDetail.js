@@ -22,11 +22,11 @@ export default class JokeDetail extends Component {
                         <a
                             onClick={() => this.props.deleteJoke(joke.id)
                                             .then(() => this.props.history.push("/jokes"))}
-                            className="card-link">Delete</a>
+                            className="card-link"><button>Delete</button></a>
                             <br/>
                             <a
                             onClick={() => this.props.history.push(`/jokes/edit/${joke.id}`)}
-                            className="card-link">Edit</a>
+                            className="card-link"><button>Edit</button></a>
                     </div>
                 </div>
             </section>

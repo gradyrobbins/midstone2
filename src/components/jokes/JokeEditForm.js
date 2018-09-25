@@ -15,20 +15,20 @@ handleFieldChange = evt => {
 }
 
 componentDidMount() {
-    console.log(this.props)
+    // console.log(this.props)
     const joke = this.props.jokes.find(e => e.id === parseInt(this.props.match.params.jokeId))
     const oldJoke = {...joke}
     this.setState(oldJoke);
 }
 constructNewJoke = (evt) => {
     evt.preventDefault()
-    console.log("this.state", this.state)
+    // console.log("this.state", this.state)
     let newJoke = {
         setup: this.state.setup,
         punchline: this.state.punchline,
         id: this.state.id
     }
-    console.log("newjoke", newJoke)
+    // console.log("newjoke", newJoke)
     this.props.editJoke(newJoke.id, newJoke)
     .then(() => this.props.history.push("/jokes"))
 }

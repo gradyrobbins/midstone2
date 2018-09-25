@@ -42,14 +42,14 @@ export default class JokeForm extends Component {
                 <form className="jokeForm">
                     <div className="form-group">
                         <label htmlFor="jokeName">joke setup</label>
-                        <input type="text" required="true"
+                        <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="setup"
                             placeholder="joke setup" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="details">punchline</label>
-                        <input type="text" required="true"
+                        <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="punchline"
                             placeholder="what's the punchline?" />

@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import NavBar from "../nav/NavBar";
+// import mycoins from "../mycoincollection/mycoins"
 
 
-class List extends Component {
+class List2 extends Component {
 
     
    
@@ -39,5 +40,5 @@ class List extends Component {
     }
 }
 
-export default List
+export default List2
                 

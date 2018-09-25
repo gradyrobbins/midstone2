@@ -13,18 +13,15 @@ class User extends Component {
                             <div key={user.id} className="card card--user">
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        
-                                    user ID: {user.id} <br/>
-                                    Name: {user.username}
-                                        
+                                    {/* user.id: {user.id} <br/> */}
+                                    {user.username}
                                     </h5>
-
-                                   
+                                    <h6>Needs :  <br/>/import via props then map over card/</h6>
                                     <div className="">
                                     </div>
-                                    <a href="/register"
+                                    {/* <a href="/register"
                                     onClick={() => this.props.deleteUser(user.id)}
-                                    className="card-link">Delete User</a>
+                                    className="card-link">Delete User</a> */}
 
                                 </div>
                              </div>

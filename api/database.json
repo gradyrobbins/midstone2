@@ -613,14 +613,44 @@
   ],
   "jokes": [
     {
-      "setup": "bad joke",
+      "setup": "Mississippi's state quarter",
       "punchline": "yo mama",
-      "id": 2
+      "id": 9
     },
     {
-      "setup": "yo mama so crosseyed",
-      "punchline": "when she cries, tears roll down her back!",
-      "id": 7
+      "setup": "knock knock",
+      "punchline": "who's there",
+      "id": 10
+    },
+    {
+      "setup": "Mississippi's state quarter",
+      "punchline": "...is only worth a nickel",
+      "id": 11
+    },
+    {
+      "setup": "bad joke",
+      "punchline": "yo mama",
+      "id": 12
+    },
+    {
+      "setup": "knock knock",
+      "punchline": "rotten tomatoes",
+      "id": 13
+    },
+    {
+      "setup": "knockknock2",
+      "punchline": "who's there",
+      "id": 14
+    },
+    {
+      "setup": "bad joke",
+      "punchline": "yo mama",
+      "id": 15
+    },
+    {
+      "setup": "bad joke",
+      "punchline": "yo mama",
+      "id": 16
     }
   ],
   "quarter": [
@@ -678,6 +708,11 @@
       "quarter_id": 11,
       "user_id": 1,
       "state_id": 36
+    },
+    {
+      "quarter_id": 12,
+      "user_id": 1,
+      "state_id": 1
     }
   ]
 }

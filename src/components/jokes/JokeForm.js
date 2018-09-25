@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "../login/Login.css"
+import NavBar from './../nav/NavBar'
 
 export default class JokeForm extends Component {
     // Set initial state
@@ -38,14 +39,16 @@ export default class JokeForm extends Component {
 
     render() {
         return (
+            <div>
+            <NavBar />
             <React.Fragment>
                 <form className="jokeForm">
                     <div className="form-group">
-                        <label htmlFor="jokeName">joke setup</label>
+                        <label htmlFor="jokeName">new State to add</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="setup"
-                            placeholder="joke setup" />
+                            placeholder="select the new State" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="details">punchline</label>
@@ -60,6 +63,7 @@ export default class JokeForm extends Component {
 
                 </form>
             </React.Fragment>
+            </div>
         )
     }
 }

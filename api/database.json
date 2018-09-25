@@ -122,7 +122,7 @@
     },
     {
       "state_id": 7,
-      "name": "South_Carolina",
+      "name": "South Carolina",
       "Statehood": "May 23, 1788",
       "Capital": "Columbia",
       "Nicknames": "Palmetto State",
@@ -132,7 +132,7 @@
     },
     {
       "state_id": 8,
-      "name": "New_Hampshire",
+      "name": "New Hampshire",
       "Statehood": "June 21, 1788",
       "Capital": "Concord",
       "Nicknames": "Granite State",
@@ -152,7 +152,7 @@
     },
     {
       "state_id": 10,
-      "name": "New_York",
+      "name": "New York",
       "Statehood": "July 26,1788",
       "Capital": "Albany",
       "Nicknames": "Empire State",

@@ -42,10 +42,10 @@ function getstateID(item) {
 }
 
 //function to extract the state's name property out of an object
-function getstatename(item) {
-    var statename = item.name;
-    return statename ;
-}
+// function getstatename(item) {
+//     var statename = item.name;
+//     return statename ;
+// }
 
 //map over the current/specific user's collection and return an array[] of their collection.
 const myStateIDs = this.state.specificUser.map(getstateID) || {} 
@@ -80,45 +80,44 @@ let yyy = missingStateIDs.map(e =>  this.props.states.find(state => state.state_
 // find function which matches specificuser.state_id === this.props.states.state_id; then return an {} .  should be able to map over this onto cards.
 
         return (
-            <div className="container">
+            <div>
                 <NavBar />
-               
-                Hello, {currentUser.username}, here are your quarters: 
-                <div className="row">
-                <section className="col">
-                    {xxx.map(taco => 
-                    
-                    {
-                        // console.log("taco =" , taco)
-                        return <div className="Card" key={taco.state_id}>
-                                    
-                                    i have State name: {taco.name}
-                                </div>
-                            }
-                            
-                            )
-                    }
-              
-                </section>
+            <div className="container">
+                
+                    Hello, {currentUser.username}, here are your quarters: 
+                    <div className="row">
+                    <section className="col">
+                        {xxx.map(taco => 
+                        
+                        {
+                            // console.log("taco =" , taco)
+                            return <div className="Card" key={taco.state_id}>
+                                        
+                                        I have : {taco.name}
+                                    </div>
+                                }
+                                
+                                )
+                        }
+                
+                    </section>
 
 
-                <section className="col">
-                    {yyy.map(taco => 
-                    
-                    {
-                        // console.log("taco =" , taco)
-                        return <div className="Card" key={taco.state_id}>
-                                    
-                                    i need State name: {taco.name}
-                                </div>
-                            }
-                            
-                            )
-                    }
-              
-                </section>
+                    <section className="col">
+                        {yyy.map(taco => 
+                        {
+                            // console.log("taco =" , taco)
+                            return <div className="Card" key={taco.state_id}>
+                                        
+                                        I need :  {taco.name}
+                                    </div>
+                                }
+                                )
+                        }
+                    </section>
+                    </div>
                 </div>
-            </div>
+                </div>
         );
     }
 }

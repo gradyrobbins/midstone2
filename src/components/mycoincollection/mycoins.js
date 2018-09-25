@@ -81,7 +81,7 @@ let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.sta
                 <NavBar />
                     <div className="container">
                 
-                    Hello, {currentUser.username}, here are your quarters: 
+                    Hello, {currentUser.username}, here is the status of your quarter collection: 
                     <div className="row">
                     <section className="col">
                         {gotem.map(taco => 

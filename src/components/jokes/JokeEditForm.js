@@ -39,14 +39,14 @@ render() {
         <React.Fragment>
             <form className="eventForm">
                 <div className="form-group">
-                    <label htmlFor="setup">edit setup</label>
+                    <label htmlFor="setup">edit name</label>
                     <input type="text" required={true}
                         onChange={this.handleFieldChange}
                         id="setup"
                         placeholder={this.props.setup} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="punchline">edit punchline </label>
+                    <label htmlFor="punchline">edit details </label>
                     <input type="text" required={true}
                         onChange={this.handleFieldChange}
                         id="punchline"

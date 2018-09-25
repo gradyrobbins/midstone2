@@ -613,44 +613,46 @@
   ],
   "jokes": [
     {
-      "setup": "Mississippi's state quarter",
-      "punchline": "yo mama",
-      "id": 9
+      "setup": "Alaska",
+      "punchline": "Northern Lights!",
+      "state_id": "",
+      "id": 17
     },
     {
-      "setup": "knock knock",
-      "punchline": "who's there",
-      "id": 10
+      "setup": "Arizona",
+      "punchline": "grand canyon",
+      "state_id": "",
+      "id": 18
     },
     {
-      "setup": "Mississippi's state quarter",
-      "punchline": "...is only worth a nickel",
-      "id": 11
+      "setup": "California",
+      "punchline": "California dreamin'",
+      "state_id": "",
+      "id": 19
     },
     {
-      "setup": "bad joke",
-      "punchline": "yo mama",
-      "id": 12
+      "setup": "Wyoming",
+      "punchline": "never been",
+      "state_id": "",
+      "id": 20
     },
     {
-      "setup": "knock knock",
-      "punchline": "rotten tomatoes",
-      "id": 13
+      "setup": "South Dakota",
+      "punchline": "badlands",
+      "state_id": "",
+      "id": 21
     },
     {
-      "setup": "knockknock2",
-      "punchline": "who's there",
-      "id": 14
+      "setup": "Florida",
+      "punchline": "panhandle",
+      "state_id": "",
+      "id": 22
     },
     {
-      "setup": "bad joke",
-      "punchline": "yo mama",
-      "id": 15
-    },
-    {
-      "setup": "bad joke",
-      "punchline": "yo mama",
-      "id": 16
+      "setup": "Kansas",
+      "punchline": "canned sauce2",
+      "state_id": "",
+      "id": 23
     }
   ],
   "quarter": [

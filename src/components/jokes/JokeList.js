@@ -18,7 +18,7 @@ class JokeList extends Component{
                         onClick={() => {
                             this.props.history.push("/jokes/new")}
                         }>
-                    Click to add a new 'state'
+                    Add a new state to your collection
                 </button>
             </div>
             <section className="jokes">
@@ -27,12 +27,12 @@ class JokeList extends Component{
                     <div key={joke.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                joke setup: {joke.setup}<br/>
-                                joke punchline: {joke.punchline}
+                                state name: {joke.setup}<br/>
+                                more details: {joke.punchline}
                                     <Link className="nav-link" to={`/jokes/${joke.id}`}><button>Details</button></Link>
                                 <a 
                                     onClick={() => this.props.deleteJoke(joke.id)}
-                                    className="card-link"><button>Delete this joke</button></a>
+                                    className="card-link"><button>Delete this state from your collection</button></a>
                             </h5>
                             
                         </div>

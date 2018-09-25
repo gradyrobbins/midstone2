@@ -7,6 +7,7 @@ export default class JokeForm extends Component {
     state = {
         setup: "",
         punchline: "",
+        state_id: ""
     }
 
     // Update state whenever an input field is edited
@@ -30,6 +31,9 @@ export default class JokeForm extends Component {
             const joke = {
                 setup: this.state.setup,
                 punchline: this.state.punchline,
+                state_id: this.state.state_id
+
+
             }
 
             // Create the joke and redirect user to joke list
@@ -44,18 +48,18 @@ export default class JokeForm extends Component {
             <React.Fragment>
                 <form className="jokeForm">
                     <div className="form-group">
-                        <label htmlFor="jokeName">new State to add</label>
+                        <label htmlFor="jokeName">Add a new State to your collection</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="setup"
                             placeholder="select the new State" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="details">punchline</label>
+                        <label htmlFor="details">details?</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="punchline"
-                            placeholder="what's the punchline?" />
+                            placeholder="add more details here" />
                     </div>
                     <button type="submit" onClick={this.constructNewJoke}
                     className="btn btn-primary">Submit</button>

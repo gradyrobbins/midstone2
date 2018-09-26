@@ -46,7 +46,7 @@
       "username": "dummyacct",
       "email": "dummy@22.com",
       "password": "22",
-      "id":8
+      "id": 8
     }
   ],
   "state": [
@@ -611,6 +611,80 @@
       "Bird": "Mariana fruit-dove"
     }
   ],
+  "jokes": [
+    {
+      "setup": "California",
+      "punchline": "California dreamin'",
+      "state_id": "",
+      "id": 19
+    },
+    {
+      "setup": "Wyoming",
+      "punchline": "never been",
+      "state_id": "",
+      "id": 20
+    },
+    {
+      "setup": "South Dakota",
+      "punchline": "badlands",
+      "state_id": "",
+      "id": 21
+    },
+    {
+      "setup": "Florida",
+      "punchline": "panhandle",
+      "state_id": "",
+      "id": 22
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
+      "state_id": "",
+      "id": 24
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "who's there",
+      "state_id": "",
+      "id": 25
+    },
+    {
+      "setup": "Louisiana",
+      "punchline": "Baton Rouge",
+      "state_id": "",
+      "id": 28
+    },
+    {
+      "setup": "Nevada",
+      "punchline": "Viva Las Vegas",
+      "state_id": "",
+      "id": 29
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "whothere",
+      "state_id": "",
+      "id": 30
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
+      "state_id": "",
+      "id": 32
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
+      "state_id": "",
+      "id": 34
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "who's there",
+      "state_id": "",
+      "id": 35
+    }
+  ],
   "quarter": [
     {
       "quarter_id": 1,
@@ -666,6 +740,16 @@
       "quarter_id": 11,
       "user_id": 1,
       "state_id": 36
+    },
+    {
+      "quarter_id": 12,
+      "user_id": 1,
+      "state_id": 1
+    },
+    {
+      "quarter_id": 13,
+      "user_id": 2,
+      "state_id": 0
     }
   ]
 }

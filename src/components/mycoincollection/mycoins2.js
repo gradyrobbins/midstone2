@@ -3,29 +3,48 @@ import NavBar from '../nav/NavBar';
 import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
 
-export default class Mycoins  extends Component {
+export default class Mycoins2  extends Component {
 
 componentDidMount() {
     
-    const currentUser = JSON.parse(localStorage.getItem("credentials"))
-
-    DataManager.getAllUserData("quarter", currentUser.id)
-        .then(thisusersquarters => this.setState({thisusersquarters : thisusersquarters}))
+    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    
+   
 }
 
-state = {
-    thisusersquarters:[],
-};
-   
+// state = {
+//     bloop:[],
+// };
+
 render() {
-    const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    
+    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    
+    
+    //let currentview = find function.  
+    //find function:  map over userid's (e=this.props.users.find(e =e.user_id === e ) || {})
+
 
     //function to extract the state_id property from inside the array of objects for later use
-    function getstateID(item) {
-        var bloop = item.state_id;
-        return bloop ;
-    }
+    // function getstateID(item) {
+    //     var bloop = item.state_id;
+    //     return bloop ;
+    // }
 
+    //function to extract the id property from inside the array of objects for later use
+    function getuserID(item) {
+        var barf = item.id;
+        return barf ;
+    }
+//map over the current/specific user's collection and return an array[] of their collection.
+// const bbb = this.props.users.map(getuserID) || {} 
+// console.log("users' id's stored in an array named 'bbb' = ", bbb)
+
+// DataManager.getAll("quarter")
+// .then(bloop => this.setState({bloop : bloop}))
+
+// const ccc = this.props.users.find(e => e.id === e) || {}
+// console.log('ccc ', ccc)
 //function to extract the state's name property out of an object
 // function getstatename(item) {
 //     var statename = item.name;
@@ -33,11 +52,11 @@ render() {
 // }
 
 //map over the current/specific user's collection and return an array[] of their collection.
-const myStateIDs = this.state.thisusersquarters.map(getstateID) || {} 
+// const myStateIDs = this.state.thisusersquarters.map(getstateID) || {} 
 // console.log("my own collection's state_id's" , myStateIDs)
    
 //map over the entire list of states/territories and return an array [] of state_id's
-const allStateIDs = this.props.states.map(getstateID) || {}
+// const allStateIDs = this.props.states.map(getstateID) || {}
 // console.log("entire USA state_id's", allStateIDs)    
 
 //this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
@@ -50,17 +69,19 @@ function compare(arr1,arr2){
     return matches;
 }
 
+
+
 //here is where i invoke compare()  as defined above
-let matchedStateIDs = compare(myStateIDs, allStateIDs);
+// let matchedStateIDs = compare(myStateIDs, allStateIDs);
 // console.log("matched state_id's: ", matchedStateIDs)
 
 //this maps over the matched ID's and link them to === state_id's in the master list which was passed in via props
-let gotem = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
+// let gotem = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
 //the below function was based on: https://stackoverflow.com/questions/40537972/compare-2-arrays-and-show-unmatched-elements-from-array-1
-var missingStateIDs = allStateIDs.filter( function(n) { return !this.has(n) }, new Set(myStateIDs) );
+// var missingStateIDs = allStateIDs.filter( function(n) { return !this.has(n) }, new Set(myStateIDs) );
 // console.log("missing :" , missingStateIDs);
-let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
+// let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
 
 // return:  map the "got 'em[] " array over card, map the "need 'em []" array over card; render to DOM
@@ -68,38 +89,13 @@ let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.sta
         return (
             <div>
                 <NavBar />
-
-                    <div>
-                        <div className="newJokeButton">
-                            <button type="button"
-                                    className="btn btn-success"
-                                    onClick={() => {
-                                        this.props.history.push("/states/new")}
-                                    }>
-                                Add a new coin to your collection
-                            </button>
-                        </div>
-                    </div>
-
                     <div className="container">
                 
-                    Hello, {currentUser.username}, here is the status of your quarter collection: 
+                    quarter collection want list: 
                     <div className="row">
+                    
                     <section className="col">
-                        {gotem.map(taco => 
-                        {
-                            // console.log("taco =" , taco)
-                            return <div className="Card" key={taco.state_id}>
-                                        I have : {taco.name}
-                                       
-                                    </div>
-                                }
-                                )
-                        }
-                    </section>
-
-                    <section className="col">
-                        {needem.map(taco => 
+                        {/* {needem.map(taco => 
                         {
                             // console.log("taco =" , taco)
                             return <div className="Card" key={taco.state_id}>
@@ -107,7 +103,7 @@ let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.sta
                                     </div>
                                 }
                                 )
-                        }
+                        } */}
                     </section>
                     </div>
                 </div>

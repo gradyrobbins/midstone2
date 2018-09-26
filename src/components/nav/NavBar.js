@@ -25,6 +25,10 @@ class NavBar extends Component {
                         <Link className="nav-link"
                         to="/users">View other's collections</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link"
+                        to="/jokes">Bad jokes!</Link>
+                    </li>
                     
                     
                 </ul>

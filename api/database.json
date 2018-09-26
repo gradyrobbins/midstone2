@@ -613,18 +613,6 @@
   ],
   "jokes": [
     {
-      "setup": "Alaska",
-      "punchline": "Northern Lights!",
-      "state_id": "",
-      "id": 17
-    },
-    {
-      "setup": "Arizona",
-      "punchline": "grand canyon",
-      "state_id": "",
-      "id": 18
-    },
-    {
       "setup": "California",
       "punchline": "California dreamin'",
       "state_id": "",
@@ -649,16 +637,52 @@
       "id": 22
     },
     {
-      "setup": "Kansas",
-      "punchline": "canned sauce2",
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
       "state_id": "",
-      "id": 23
+      "id": 24
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "who's there",
+      "state_id": "",
+      "id": 25
+    },
+    {
+      "setup": "Louisiana",
+      "punchline": "Baton Rouge",
+      "state_id": "",
+      "id": 28
+    },
+    {
+      "setup": "Nevada",
+      "punchline": "Viva Las Vegas",
+      "state_id": "",
+      "id": 29
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "whothere",
+      "state_id": "",
+      "id": 30
     },
     {
       "setup": "Wisconsin",
       "punchline": "Badgers",
       "state_id": "",
-      "id": 24
+      "id": 32
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
+      "state_id": "",
+      "id": 34
+    },
+    {
+      "setup": "Kansas",
+      "punchline": "who's there",
+      "state_id": "",
+      "id": 35
     }
   ],
   "quarter": [
@@ -721,6 +745,11 @@
       "quarter_id": 12,
       "user_id": 1,
       "state_id": 1
+    },
+    {
+      "quarter_id": 13,
+      "user_id": 2,
+      "state_id": 0
     }
   ]
 }

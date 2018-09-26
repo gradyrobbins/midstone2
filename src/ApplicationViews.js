@@ -6,12 +6,15 @@ import Login from './components/login/LoginForm'
 import Register from './components/login/RegisterForm'
 import Home from './home'
 import Mycoins from './components/mycoincollection/mycoins';
+import Mycoins2 from './components/mycoincollection/mycoins2';
+
 import User from './components/mycoincollection/User'
 import List from './components/learn/List'
 import JokeList from './components/jokes/JokeList'
 import JokeForm from './components/jokes/JokeForm'
 import JokeDetail from './components/jokes/JokeDetail'
 import JokeEditForm from './components/jokes/JokeEditForm'
+
 export default class ApplicationViews extends Component {
 
   // Check if credentials are in local storage
@@ -111,19 +114,31 @@ export default class ApplicationViews extends Component {
         <Route exact path="/users" render={(props) => {
                     return <User users={this.state.users} deleteUser={this.deleteUser}/>
                 }} />
-        <Route exact path="/jokes" render={(props) => {
+
+        <Route exact path="/users/:userId(\d+)"render={(props) => {
           if (this.isAuthenticated()) {
-            return <JokeList {...props}
-              deleteJoke={this.deleteJoke}
-              jokes={this.state.jokes} />
+            return <Mycoins2 quarters={this.state.quarter} users={this.state.users} states={this.state.states} matchlist={this.state.matchlist}{...props}/> 
           } else {
             return <Redirect to="/" />
           }
         }} />
-        <Route exact path="/jokes/new" render={(props) => {
+
+
+        <Route exact path="/jokes" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <JokeList {...props}
+              deleteJoke={this.deleteJoke}
+              jokes={this.state.jokes} 
+              state={this.state.states}/>
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        <Route exact path="/states/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <JokeForm {...props}
-              addJoke={this.addJoke} />
+              addJoke={this.addJoke}
+              states={this.state.states} />
           } else {
             return <Redirect to="/" />
           }
@@ -135,6 +150,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
+        
         <Route exact path="/jokes/edit/:jokeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <JokeEditForm {...props} editJoke={this.editJoke} deleteJoke={this.deleteJoke} jokes={this.state.jokes} />

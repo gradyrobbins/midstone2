@@ -1,34 +1,50 @@
 import React, { Component } from 'react'
 import "./../learn/bloop.css"
+import { Link } from "react-router-dom"
 import NavBar from '../nav/NavBar';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 class User extends Component {
     render() {
+
+
+
+
         return (
             <div>
                 <NavBar />
+                
+                
+                
                 <section className="something">
                 {
                         this.props.users.map(user =>
+                            
                             <div key={user.id} className="card card--user">
                                 <div className="card-body">
-                                    <h5 className="card-title">
-                                    {/* user.id: {user.id} <br/> */}
+                                    <h3 className="card-title">
                                     {user.username}
-                                    </h5>
-                                    <h6>Needs :  <br/>/import via props then map over card/</h6>
-                                    <div className="">
+                                    </h3>
+                                   
+                                    <div>
+                                        <Link className="nav-link" to={`/users/${user.id}`}>
+                                            <button>Details</button>
+                                            
+                                        </Link> 
                                     </div>
-                                    {/* <a href="/register"
-                                    onClick={() => this.props.deleteUser(user.id)}
-                                    className="card-link">Delete User</a> */}
+                                    
 
+                                    
+                                   
+                                    
                                 </div>
-                             </div>
+                            </div>
                         )
+
+
                     }
                 </section>
-
+                
                 
             </div>
         )

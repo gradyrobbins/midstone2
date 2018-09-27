@@ -31,22 +31,16 @@
       "id": 5
     },
     {
-      "username": "MaryMac",
+      "username": "Mary Mac",
       "email": "marymac@22.com",
       "password": "22",
       "id": 6
     },
     {
-      "username": "Molly",
+      "username": "Molly Patrick",
       "email": "mollypatrick@22.com",
       "password": "22",
       "id": 7
-    },
-    {
-      "username": "dummyacct",
-      "email": "dummy@22.com",
-      "password": "22",
-      "id": 8
     }
   ],
   "state": [
@@ -637,18 +631,6 @@
       "id": 22
     },
     {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 24
-    },
-    {
-      "setup": "Kansas",
-      "punchline": "who's there",
-      "state_id": "",
-      "id": 25
-    },
-    {
       "setup": "Louisiana",
       "punchline": "Baton Rouge",
       "state_id": "",
@@ -662,27 +644,21 @@
     },
     {
       "setup": "Kansas",
-      "punchline": "whothere",
-      "state_id": "",
-      "id": 30
-    },
-    {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 32
-    },
-    {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 34
-    },
-    {
-      "setup": "Kansas",
       "punchline": "who's there",
       "state_id": "",
       "id": 35
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Madison",
+      "state_id": "",
+      "id": 36
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Badgers",
+      "state_id": "",
+      "id": 37
     }
   ],
   "quarter": [
@@ -750,6 +726,31 @@
       "quarter_id": 13,
       "user_id": 2,
       "state_id": 0
+    },
+    {
+      "quarter_id": 14,
+      "user_id": 3,
+      "state_id": 17
+    },
+    {
+      "quarter_id": 15,
+      "user_id": 4,
+      "state_id": 52
+    },
+    {
+      "quarter_id": 16,
+      "user_id": 5,
+      "state_id": 10
+    },
+    {
+      "quarter_id": 17,
+      "user_id": 6,
+      "state_id": 20
+    },
+    {
+      "quarter_id": 18,
+      "user_id": 7,
+      "state_id": 53
     }
   ]
 }

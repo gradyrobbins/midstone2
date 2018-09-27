@@ -1,50 +1,44 @@
 import React, { Component } from 'react'
 import NavBar from '../nav/NavBar';
-import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
+import DataManager from "./../../modules/DataManager"
 
 export default class Mycoins2  extends Component {
 
 componentDidMount() {
-    
-    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
-    
-   
+    let whoisit = this.props.match.params;
+    DataManager.getAllUserData("quarter", whoisit.userId)
+        .then(thisusersquarters => this.setState({thisusersquarters : thisusersquarters}))
 }
 
-// state = {
-//     bloop:[],
-// };
+state = {
+    thisusersquarters:[],
+};
 
 render() {
+    // console.log("this.props =", this.props)
+    // console.log("this.props.match.params =", this.props.match.params)
+        // let whoisit = this.props.match.params;
+    // console.log("this userId: " , whoisit.userId)
     
-    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
-    
-    
-    //let currentview = find function.  
-    //find function:  map over userid's (e=this.props.users.find(e =e.user_id === e ) || {})
-
-
+    //function to extract the user_id property from inside the array of objects for later use
+        function getuserID(item) {
+        var newphonewhodis = item.user_id;
+        return newphonewhodis ;
+        }
     //function to extract the state_id property from inside the array of objects for later use
-    // function getstateID(item) {
-    //     var bloop = item.state_id;
-    //     return bloop ;
-    // }
+        function getstateID(item) {
+        var bloop = item.state_id;
+        return bloop ;
+        }
 
-    //function to extract the id property from inside the array of objects for later use
-    function getuserID(item) {
-        var barf = item.id;
-        return barf ;
-    }
-//map over the current/specific user's collection and return an array[] of their collection.
-// const bbb = this.props.users.map(getuserID) || {} 
-// console.log("users' id's stored in an array named 'bbb' = ", bbb)
+    // map over the JSON's quarter collection and return an array[] of user_id's for each quarter.
+        const allQuarters = this.props.quarters.map(getuserID) || {} 
+        console.log("all quarters, listed in an array by who owns them:" , allQuarters)
 
-// DataManager.getAll("quarter")
-// .then(bloop => this.setState({bloop : bloop}))
 
-// const ccc = this.props.users.find(e => e.id === e) || {}
-// console.log('ccc ', ccc)
+
+
 //function to extract the state's name property out of an object
 // function getstatename(item) {
 //     var statename = item.name;
@@ -59,15 +53,15 @@ render() {
 // const allStateIDs = this.props.states.map(getstateID) || {}
 // console.log("entire USA state_id's", allStateIDs)    
 
-//this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
-function compare(arr1,arr2){
-    const matches =[];
+// this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
+// function compare(arr1,arr2){
+//     const matches =[];
   
-    arr1.forEach((e1)=>arr2.forEach((e2)=>
-        {if (e1 === e2){matches.push(e1)}}
-                                            ));
-    return matches;
-}
+//     arr1.forEach((e1)=>arr2.forEach((e2)=>
+//         {if (e1 === e2){matches.push(e1)}}
+//                                             ));
+//     return matches;
+// }
 
 
 
@@ -90,20 +84,20 @@ function compare(arr1,arr2){
             <div>
                 <NavBar />
                     <div className="container">
-                
-                    quarter collection want list: 
+                    
+                    this user's collection, by state # : 
                     <div className="row">
                     
                     <section className="col">
-                        {/* {needem.map(taco => 
+                        {this.state.thisusersquarters.map(taco => 
                         {
-                            // console.log("taco =" , taco)
+                            console.log("taco =" , taco)
                             return <div className="Card" key={taco.state_id}>
-                                        I need :  {taco.name}
+                                        state # : {taco.state_id}
                                     </div>
                                 }
                                 )
-                        } */}
+                        }
                     </section>
                     </div>
                 </div>

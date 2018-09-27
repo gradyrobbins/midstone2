@@ -637,18 +637,6 @@
       "id": 22
     },
     {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 24
-    },
-    {
-      "setup": "Kansas",
-      "punchline": "who's there",
-      "state_id": "",
-      "id": 25
-    },
-    {
       "setup": "Louisiana",
       "punchline": "Baton Rouge",
       "state_id": "",
@@ -662,27 +650,15 @@
     },
     {
       "setup": "Kansas",
-      "punchline": "whothere",
-      "state_id": "",
-      "id": 30
-    },
-    {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 32
-    },
-    {
-      "setup": "Wisconsin",
-      "punchline": "Badgers",
-      "state_id": "",
-      "id": 34
-    },
-    {
-      "setup": "Kansas",
       "punchline": "who's there",
       "state_id": "",
       "id": 35
+    },
+    {
+      "setup": "Wisconsin",
+      "punchline": "Madison",
+      "state_id": "",
+      "id": 36
     }
   ],
   "quarter": [

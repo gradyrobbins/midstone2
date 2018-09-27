@@ -19,8 +19,8 @@ export default class JokeDetail extends Component {
                     <div className="card-body">
                         
                         <h6 className="card-title">name: {joke.setup}</h6>
-                        {/* <br/>
-                        <h6>details: {joke.punchline} </h6> */}
+                        <br/>
+                        <h6>details: {joke.punchline} </h6>
                        
                         {/* <a
                             onClick={() => this.props.deleteJoke(joke.id)

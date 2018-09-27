@@ -7,35 +7,31 @@ export default class Mycoins2  extends Component {
 
 componentDidMount() {
     
-    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
-    
    
 }
 
-// state = {
-//     bloop:[],
-// };
-
 render() {
+    console.log("this.props =", this.props)
     
-    // const currentUser = JSON.parse(localStorage.getItem("credentials"))
     
-    
-    //let currentview = find function.  
-    //find function:  map over userid's (e=this.props.users.find(e =e.user_id === e ) || {})
-
-
-    //function to extract the state_id property from inside the array of objects for later use
-    // function getstateID(item) {
-    //     var bloop = item.state_id;
-    //     return bloop ;
-    // }
-
     //function to extract the id property from inside the array of objects for later use
-    function getuserID(item) {
-        var barf = item.id;
-        return barf ;
-    }
+        function getuserID(item) {
+            var barf = item.userId;
+            return barf ;
+        }
+        console.log("this.props.match.params =", this.props.match.params)
+        let whoisit = this.props.match.params;
+        console.log("this user: " , whoisit.userId)
+        
+        //find function:  map over userid's (e=this.props.users.find(e =e.user_id === e ) || {})
+        
+        
+        //function to extract the state_id property from inside the array of objects for later use
+        // function getstateID(item) {
+            //     var bloop = item.state_id;
+            //     return bloop ;
+            // }
+            
 //map over the current/specific user's collection and return an array[] of their collection.
 // const bbb = this.props.users.map(getuserID) || {} 
 // console.log("users' id's stored in an array named 'bbb' = ", bbb)
@@ -60,14 +56,14 @@ render() {
 // console.log("entire USA state_id's", allStateIDs)    
 
 //this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
-function compare(arr1,arr2){
-    const matches =[];
+// function compare(arr1,arr2){
+//     const matches =[];
   
-    arr1.forEach((e1)=>arr2.forEach((e2)=>
-        {if (e1 === e2){matches.push(e1)}}
-                                            ));
-    return matches;
-}
+//     arr1.forEach((e1)=>arr2.forEach((e2)=>
+//         {if (e1 === e2){matches.push(e1)}}
+//                                             ));
+//     return matches;
+// }
 
 
 

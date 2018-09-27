@@ -69,17 +69,6 @@ let needem = missingStateIDs.map(e =>  this.props.states.find(state => state.sta
             <div>
                 <NavBar />
 
-                    <div>
-                        <div className="newJokeButton">
-                            <button type="button"
-                                    className="btn btn-success"
-                                    onClick={() => {
-                                        this.props.history.push("/states/new")}
-                                    }>
-                                Add a new coin to your collection
-                            </button>
-                        </div>
-                    </div>
 
                     <div className="container">
                 

@@ -7,7 +7,6 @@ import Register from './components/login/RegisterForm'
 import Home from './home'
 import Mycoins from './components/mycoincollection/mycoins';
 import Mycoins2 from './components/mycoincollection/mycoins2';
-
 import User from './components/mycoincollection/User'
 import List from './components/learn/List'
 import JokeList from './components/jokes/JokeList'

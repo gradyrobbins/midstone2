@@ -1,46 +1,44 @@
 import React, { Component } from 'react'
 import NavBar from '../nav/NavBar';
-import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
+import DataManager from "./../../modules/DataManager"
 
 export default class Mycoins2  extends Component {
 
 componentDidMount() {
-    
-   
+    let whoisit = this.props.match.params;
+    DataManager.getAllUserData("quarter", whoisit.userId)
+        .then(thisusersquarters => this.setState({thisusersquarters : thisusersquarters}))
 }
 
+state = {
+    thisusersquarters:[],
+};
+
 render() {
-    console.log("this.props =", this.props)
+    // console.log("this.props =", this.props)
+    // console.log("this.props.match.params =", this.props.match.params)
+        // let whoisit = this.props.match.params;
+    // console.log("this userId: " , whoisit.userId)
     
-    
-    //function to extract the id property from inside the array of objects for later use
+    //function to extract the user_id property from inside the array of objects for later use
         function getuserID(item) {
-            var barf = item.userId;
-            return barf ;
+        var newphonewhodis = item.user_id;
+        return newphonewhodis ;
         }
-        console.log("this.props.match.params =", this.props.match.params)
-        let whoisit = this.props.match.params;
-        console.log("this user: " , whoisit.userId)
-        
-        //find function:  map over userid's (e=this.props.users.find(e =e.user_id === e ) || {})
-        
-        
-        //function to extract the state_id property from inside the array of objects for later use
-        // function getstateID(item) {
-            //     var bloop = item.state_id;
-            //     return bloop ;
-            // }
-            
-//map over the current/specific user's collection and return an array[] of their collection.
-// const bbb = this.props.users.map(getuserID) || {} 
-// console.log("users' id's stored in an array named 'bbb' = ", bbb)
+    //function to extract the state_id property from inside the array of objects for later use
+        function getstateID(item) {
+        var bloop = item.state_id;
+        return bloop ;
+        }
 
-// DataManager.getAll("quarter")
-// .then(bloop => this.setState({bloop : bloop}))
+    // map over the JSON's quarter collection and return an array[] of user_id's for each quarter.
+        const allQuarters = this.props.quarters.map(getuserID) || {} 
+        console.log("all quarters, listed in an array by who owns them:" , allQuarters)
 
-// const ccc = this.props.users.find(e => e.id === e) || {}
-// console.log('ccc ', ccc)
+
+
+
 //function to extract the state's name property out of an object
 // function getstatename(item) {
 //     var statename = item.name;
@@ -55,7 +53,7 @@ render() {
 // const allStateIDs = this.props.states.map(getstateID) || {}
 // console.log("entire USA state_id's", allStateIDs)    
 
-//this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
+// this function is built to compare the user's array of stateIDs against the master list of USA stateIDs
 // function compare(arr1,arr2){
 //     const matches =[];
   
@@ -86,20 +84,20 @@ render() {
             <div>
                 <NavBar />
                     <div className="container">
-                
-                    quarter collection want list: 
+                    
+                    this user's collection, by state # : 
                     <div className="row">
                     
                     <section className="col">
-                        {/* {needem.map(taco => 
+                        {this.state.thisusersquarters.map(taco => 
                         {
-                            // console.log("taco =" , taco)
+                            console.log("taco =" , taco)
                             return <div className="Card" key={taco.state_id}>
-                                        I need :  {taco.name}
+                                        state # : {taco.state_id}
                                     </div>
                                 }
                                 )
-                        } */}
+                        }
                     </section>
                     </div>
                 </div>

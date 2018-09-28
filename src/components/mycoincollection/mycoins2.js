@@ -17,10 +17,10 @@ state = {
 
 render() {
     // console.log("this.props =", this.props)
-    console.log("this.props.match.params =", this.props.match.params)
+    // console.log("this.props.match.params =", this.props.match.params)
     let whoisit = this.props.match.params;
 
-    // console.log("this userId: " , whoisit.userId)
+    console.log("this userId: " , whoisit.userId)
     
     //function to extract the user_id property from inside the array of objects for later use
         function getuserID(item) {
@@ -35,7 +35,7 @@ render() {
 
     // map over the JSON's quarter collection and return an array[] of user_id's for each quarter.
         const allQuarters = this.props.quarters.map(getuserID) || {} 
-        console.log("all quarters, listed in an array by who owns them:" , allQuarters)
+        // console.log("all quarters, listed in an array by who owns them:" , allQuarters)
 
 
 
@@ -67,11 +67,11 @@ function compare(arr1,arr2){
 
 
 //here is where i invoke compare()  as defined above
-let matchedStateIDs = compare(myStateIDs, allStateIDs);
+// let matchedStateIDs = compare(myStateIDs, allStateIDs);
 // console.log("matched state_id's: ", matchedStateIDs)
 
 //this maps over the matched ID's and link them to === state_id's in the master list which was passed in via props
-let gotem = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
+// let gotem = matchedStateIDs.map(e =>  this.props.states.find(state => state.state_id === e) ) || {} 
 
 //the below function was based on: https://stackoverflow.com/questions/40537972/compare-2-arrays-and-show-unmatched-elements-from-array-1
 var missingStateIDs = allStateIDs.filter( function(n) { return !this.has(n) }, new Set(myStateIDs) );

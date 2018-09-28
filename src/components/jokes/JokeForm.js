@@ -55,7 +55,7 @@ export default class JokeForm extends Component {
                             placeholder="select the new State" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="details">details?</label>
+                        <label htmlFor="details">notes?</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
                             id="punchline"

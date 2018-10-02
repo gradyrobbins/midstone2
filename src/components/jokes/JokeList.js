@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import NavBar from './../nav/NavBar';
-// import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
 class JokeList extends Component{
 

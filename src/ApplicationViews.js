@@ -142,7 +142,7 @@ export default class ApplicationViews extends Component {
           if (this.isAuthenticated()) {
             return <QForm {...props}
               addQ={this.addQ}
-              states={this.state.states} />
+              state={this.state.states} />
           } else {
             return <Redirect to="/" />
           }

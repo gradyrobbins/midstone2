@@ -7,11 +7,10 @@ import Register from './components/login/RegisterForm'
 import Home from './home'
 import Mycoins from './components/mycoincollection/mycoins';
 import Mycoins2 from './components/mycoincollection/mycoins2';
-
 import User from './components/mycoincollection/User'
 import List from './components/learn/List'
 import JokeList from './components/jokes/JokeList'
-import JokeForm from './components/jokes/JokeForm'
+import QForm from './components/jokes/JokeForm'
 import JokeDetail from './components/jokes/JokeDetail'
 import JokeEditForm from './components/jokes/JokeEditForm'
 
@@ -56,6 +55,11 @@ export default class ApplicationViews extends Component {
     .then(() => DataManager.getAll("jokes"))
     .then(jokes => this.setState({
       jokes: jokes
+    }))
+    addQ = quarter => DataManager.add("quarter", quarter)
+    .then(() => DataManager.getAll("quarters"))
+    .then(quarters => this.setState({
+      quarters: quarters
     }))
 
   deleteJoke = id => DataManager.delete("jokes", id)
@@ -136,9 +140,9 @@ export default class ApplicationViews extends Component {
         }} />
         <Route exact path="/states/new" render={(props) => {
           if (this.isAuthenticated()) {
-            return <JokeForm {...props}
-              addJoke={this.addJoke}
-              states={this.state.states} />
+            return <QForm {...props}
+              addQ={this.addQ}
+              state={this.state.states} />
           } else {
             return <Redirect to="/" />
           }

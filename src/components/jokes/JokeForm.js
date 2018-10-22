@@ -2,12 +2,13 @@ import React, { Component } from "react"
 import "../login/Login.css"
 import NavBar from './../nav/NavBar'
 
-export default class JokeForm extends Component {
+export default class QForm extends Component {
     // Set initial state
     state = {
-        setup: "",
-        punchline: "",
-        state_id: ""
+        
+        state_id: [],
+        user_id:[],
+       
     }
 
     // Update state whenever an input field is edited
@@ -23,21 +24,21 @@ export default class JokeForm extends Component {
      */
 
      //setting default input conditions - throwing alert
-    constructNewJoke = evt => {
+    addnewQ = evt => {
         evt.preventDefault()
-        if (this.state.setup === "" || this.state.punchline === "") {
-            window.alert("Jokes need both a setup AND a punchline!")
+        if (this.state.state_id === "" || this.state.user_id === "") {
+            window.alert("You need to have both a state AND a user!")
         } else {
-            const joke = {
-                setup: this.state.setup,
-                punchline: this.state.punchline,
-                state_id: this.state.state_id
+            const item = {
+                state_id: this.state.state_id,
+                user_id: this.state.user_id,
+                
 
 
             }
 
-            // Create the joke and redirect user to joke list
-            this.props.addJoke(joke).then(() => this.props.history.push("/jokes"))
+            // Create the joke and redirect user to their collection
+            this.props.addQ(item).then(() => this.props.history.push("/mycoincollection"))
         }
     }
 
@@ -48,20 +49,20 @@ export default class JokeForm extends Component {
             <React.Fragment>
                 <form className="jokeForm">
                     <div className="form-group">
-                        <label htmlFor="jokeName">Add a new State to your collection</label>
+                        <label htmlFor="state_id">Add a new State to your collection</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
-                            id="setup"
-                            placeholder="select the new State" />
+                            id="state_id"
+                            placeholder="select the new Stateid" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="details">details?</label>
+                        <label htmlFor="user_id">notes?</label>
                         <input type="text" required={true}
                             onChange={this.handleFieldChange}
-                            id="punchline"
-                            placeholder="add more details here" />
+                            id="user_id"
+                            placeholder="add userid here" />
                     </div>
-                    <button type="submit" onClick={this.constructNewJoke}
+                    <button type="submit" onClick={this.addnewQ}
                     className="btn btn-primary">Submit</button>
 
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import NavBar from './../nav/NavBar';
-// import DataManager from './../../modules/DataManager'
 import "bootstrap/dist/css/bootstrap.min.css"
 class JokeList extends Component{
 
@@ -21,6 +20,19 @@ class JokeList extends Component{
                         }>
                     Add a new coin to your collection
                 </button>
+
+                <form onSubmit="return checkForSelection();">
+                    <select id="states">
+                        <option value="AL"> Alabama</option>
+                        <option value="AK"> Alaska</option>
+                        <option value="AZ"> Arizona</option>
+                        <option value="AR"> Arkansas</option>
+                    
+                    </select>&nbsp;&nbsp;
+                </form>
+
+
+
             </div>
             <section className="jokes">
             {

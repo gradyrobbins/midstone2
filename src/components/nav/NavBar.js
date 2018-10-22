@@ -27,7 +27,11 @@ class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                        to="/jokes">Bad jokes!</Link>
+                        to="/jokes">Add routed via /jokes </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link"
+                        to="/states/new">Add routed via states/new</Link>
                     </li>
                     
                     
